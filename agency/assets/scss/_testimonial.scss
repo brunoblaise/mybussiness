@@ -1,0 +1,81 @@
+/*===========================
+     9.TESTIMONIAL css 
+===========================*/
+
+
+.testimonial-area {
+    background-color: $light-color-two;
+}
+
+.single-testimonial {
+    border: 1px solid $light-color-three;
+    padding: 25px 30px;
+    border-radius: 8px;
+    background-color: $white;
+
+    & .testimonial-author {
+        & .author-image {
+            & img {
+                width: 80px;
+                border-radius: 50%;
+            }
+        }
+
+        & .author-name {
+            padding-left: 20px;
+
+            & .name {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 24px;
+                color: $text-color-one;
+            }
+
+            & .sub-title {
+                font-size: 14px;
+                line-height: 24px;
+                color: $text-color-two;
+            }
+        }
+    }
+
+    & .testimonial-text {
+        margin-top: 25px;
+
+        & .text {
+            font-size: 14px;
+            line-height: 24px;
+            color: $text-color-one;
+        }
+    }
+}
+
+
+
+.testimonial-active {
+    & .slick-dots {
+        text-align: center;
+        margin-top: 25px;
+
+        & li {
+            display: inline-block;
+            margin: 0 3px;
+
+            & button {
+                font-size: 0;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: $light-color-three;
+                border: 0;
+                cursor: pointer;
+            }
+
+            &.slick-active {
+                & button {
+                    background-color: $primary-one;
+                }
+            }
+        }
+    }
+}

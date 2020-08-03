@@ -2053,16 +2053,18 @@ p {
 }
 
 .single-blog .blog-content .blog-meta .author img {
-    border-radius: 50%
+    border-radius: 50%;
 }
 
 .single-blog .blog-content .blog-meta .blog-list {
-    margin-top: 10px
+    margin-top: 10px;
 }
 
 .single-blog .blog-content .blog-meta .blog-list li {
     display: inline-block;
+    margin-top: 60px;
     margin-left: 50px
+
 }
 
 .single-blog .blog-content .blog-meta .blog-list li:first-child {

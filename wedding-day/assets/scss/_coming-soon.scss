@@ -1,0 +1,135 @@
+
+
+
+/*===========================
+     04.COMING SOON css 
+===========================*/
+
+.coming_soon_area{
+    background-color: $gray;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.coming_soon_shape_1{
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    z-index: -1;
+    
+    & img{
+         width: 130px;
+         opacity: 0.31;
+    }
+}
+.coming_soon_shape_2{
+    position: absolute;
+    top: -30px;
+    right: 0;
+    z-index: -1;
+    
+    & img{
+         width: 130px;
+         opacity: 0.31;
+    }
+}
+
+.coming_soon_count{
+    & .single_count{
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        background-color: $theme-color;
+        border-radius: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        
+        @media #{$lg}{
+            width: 120px;
+            height: 120px;
+        }
+        @media #{$md}{
+            width: 130px;
+            height: 130px;
+        }
+        @media #{$xs}{
+            width: 60px;
+            height: 60px;
+            margin-bottom: 5px;
+            margin-right: 5px;
+        }
+        @media #{$xs}{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+        
+        &::before{
+            position: absolute;
+            content: '';
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($theme-color, 0.20);
+            top: 10px;
+            left: 10px;
+            
+            @media #{$xs}{
+                top: 5px;
+                left: 5px;
+            }
+            @media #{$sm}{
+                top: 10px;
+                left: 10px;
+            }
+        }
+        
+        & .count_content{
+            & .count{
+                font-size: 60px;
+                font-family: $font-1;
+                color: $white;
+                line-height: 45px;
+                
+                @media #{$lg}{
+                    font-size: 50px;
+                }
+                @media #{$xs}{
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+                @media #{$sm}{
+                    font-size: 46px;
+                    line-height: 50px;
+                }
+            }
+            & .times{
+                font-size: 25px;
+                color: $white;
+                line-height: 45px;
+                
+                @media #{$lg}{
+                    font-size: 22px;
+                }
+                @media #{$xs}{
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+                @media #{$sm}{
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,168 @@
+
+
+
+/*===========================
+       05.PROJECT css 
+===========================*/
+
+.project-masonry-area{}
+
+.project-menu{
+    & ul{
+        & li{
+            display: inline-block;
+            font-size: 16px;
+            color: $body-color;
+            margin-left: 50px;
+            cursor: pointer;
+            position: relative;
+            padding-bottom: 3px;
+            margin-top: 10px;
+            
+            @media #{$xs}{
+                margin: 10px 15px 0;
+                font-size: 15px;
+            }
+            
+            &:first-child{
+                margin-left: 0;
+                
+                @media #{$xs}{
+                    margin: 10px 15px 0;
+                }
+            }
+            
+            &::before{
+                position: absolute;
+                content: '';
+                width: 0;
+                height: 2px;
+                background-color: $body-color;
+                bottom: 0;
+                left: 0;
+                @include transition(0.3s);
+            }
+            
+            &:hover,
+            &.active{
+                &::before{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.single-project{
+    position: relative;
+    
+    & .gallery-image{
+        & img{
+            width: 100%;
+        }
+    }
+    & .project-content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: -webkit-linear-gradient(left, rgba(62,44,234,0.85) 0%, rgba(75,179,249,0.85) 100%);
+        background: -o-linear-gradient(left, rgba(62,44,234,0.85) 0%, rgba(75,179,249,0.85) 100%);
+        background: linear-gradient(to right, rgba(62,44,234,0.85) 0%, rgba(75,179,249,0.85) 100%);
+        @include transition(0.3s);
+        opacity: 0;
+        visibility: hidden;
+        
+        & a{
+            background-color: $theme-color;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include transform(translate(-50%, -50%) scale(0));
+            @include transition(0.3s);
+            
+            
+            & span{
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                @include transform(translate(-50%, -50%));
+                
+                @media #{$md} {
+                    width: 30px;
+                    height: 30px;
+                }
+                
+                &::before,
+                &::after{
+                    position: absolute;
+                    content: '';
+                    width: 2px;
+                    height: 100%;
+                    background-color: $white;
+                    top: 0;
+                    left: 50%;
+                    @include transform(translateX(-50%));
+                }
+                
+                &::after{
+                    height: 2px;
+                    width: 100%;
+                    top: 50%;
+                    left: 0;
+                    @include transform(translateY(-50%));
+                }
+            }
+            
+        }
+        
+        & .project-title{
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            overflow: hidden;
+            
+            & .title{
+                font-size: 24px;
+                font-weight: 500;
+                color: $white;
+                @include transform(translateY(100%));
+                @include transition(0.3s);
+            }
+        }
+    }
+    
+    &:hover{
+        & .project-content{
+            opacity: 1;
+            visibility: visible;
+            
+            & a{
+                @include transform(translate(-50%, -50%) scale(1));
+            }
+            
+            & .project-title{
+                &  .title{
+                    @include transform(translateY(0));
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+
+
+
+/*===========================
+       04.ANALYSIS  css 
+===========================*/
+
+
+.analysis-area{}
+
+.analysis-title{
+    & .title{
+        font-size: 60px;
+        font-weight: 700;
+        color: $white;
+        
+        @media #{$lg}{
+            font-size: 50px;
+        }
+        @media #{$md}{
+            font-size: 50px;
+        }
+        @media #{$xs}{
+            font-size: 24px;
+        }
+    }
+}
+
+
+.analysis-counter{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding-bottom: 46px;
+}
+
+.single-analysis-counter{
+    & .count{
+        font-size: 80px;
+        font-weight: 700;
+        color: $white;
+        font-family: $font-2;
+        line-height: 65px;
+        
+        @media #{$lg}{
+            font-size: 70px;
+        }
+        @media #{$md}{
+            font-size: 60px;
+        }
+        @media #{$xs}{
+            font-size: 38px;
+        }
+        
+        & .plus{
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
+    & .text{
+        color: $white;
+        text-transform: uppercase;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

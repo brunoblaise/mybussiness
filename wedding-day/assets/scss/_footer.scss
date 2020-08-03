@@ -1,0 +1,108 @@
+
+
+
+/*===========================
+       11.FOOTER css 
+===========================*/
+
+
+.footer_area{
+    background-color: $gray;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+}
+
+.footer_shape_1{
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    z-index: -1;
+    
+    & img{
+         width: 130px;
+         opacity: 0.31;
+    }
+}
+
+.footer_widget{
+    & .footer_logo{
+        & a{
+            & img{
+                @media #{$xs}{
+                    width: 160px;
+                }
+            }
+        }
+    }
+    & .footer_title{
+        margin-top: 30px;
+        
+        & .title{
+            font-size: 52px;
+            color: $black;
+            
+            @media #{$xs}{
+                font-size: 38px;
+            }
+            
+            & span{
+                color: $theme-color;
+            }
+        }
+    }
+    & .footer_menu{
+        margin-top: 30px;
+        
+        & li{
+            display: inline-block;
+            margin: 0 20px;
+            
+            & a{
+                font-size: 16px;
+                color: $black;
+                @include transition(0.3s);
+                
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+.footer_copyright{
+    border-top: 2px solid $theme-color;
+    padding: 40px 0;
+    
+    & p{}
+}
+
+
+/*===== BACK TO TOP =====*/
+
+.back-to-top{
+    font-size: 20px;
+    color: $white;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    background-color: $theme-color;
+    text-align: center;
+    z-index: 99;
+    @include transition(0.3s);
+    display: none;
+    
+    &:hover{
+        color: $white;
+        background-color: $theme-color;
+    }
+}
+
+
+
+

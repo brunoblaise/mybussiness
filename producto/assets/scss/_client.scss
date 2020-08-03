@@ -1,0 +1,94 @@
+
+
+
+/*===========================
+      07.CLENT css 
+===========================*/
+
+.client_area{}
+
+
+.single_client{
+    padding: 30px;
+    border: 2px solid $border-color;
+    border-radius: 25px;
+    @include transition(0.3s);
+    
+   
+    
+    & .client_image{
+        & img{
+            display: inline-block;
+            border-radius: 50%;
+        }
+    }
+    & .client_content{
+        margin-top: 25px;
+        
+        & .author_name{
+            font-size: 24px;
+            font-weight: 600;
+            
+             @media #{$lg}{
+                font-size: 20px;
+            }
+        }
+        & span{
+            font-size: 15px;
+            margin-top: 5px;
+            color: $body-color;
+        }
+        & p{
+            margin-top: 10px;
+        }
+    }
+    
+    &:hover{
+        border-color: $theme-color;
+    }
+}
+
+.slick-center{
+    .single_client{
+        border-color: $theme-color;
+    }
+}
+
+
+.client_active{
+    & .slick-dots{
+        width: 100%;
+        text-align: center;
+        margin-top: 35px;
+        
+        & li{
+            display: inline-block;
+            margin: 0 3px;
+            
+            & button{
+                width: 15px;
+                height: 15px;
+                background-color: transparent;
+                border-radius: 50px;
+                font-size: 0;
+                @include transition(0.3s);
+                border: 2px solid $theme-color;
+            }
+            
+            &.slick-active{
+                & button{
+                    background-color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

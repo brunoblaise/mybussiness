@@ -1,0 +1,103 @@
+
+
+
+/*===========================
+       10.BLOG css 
+===========================*/
+
+
+.blog-area{}
+
+.single-blog{
+    
+    & .blog-image{
+        width: 240px;
+        
+        @media #{$lg}{
+            width: 200px;
+        }
+        @media #{$xs}{
+            width: 100%;
+        }
+        @media #{$sm}{
+            width: 240px;
+        }
+        
+        & img{
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+    
+    & .blog-content{
+        padding-left: 16px;
+        
+        @media #{$xs}{
+            padding-left: 0;
+            padding-top: 16px;
+        }
+        @media #{$sm}{
+            padding-left: 16px;
+            padding-top: 0;
+        }
+        
+        & .blog-title{
+            & a{
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 25px;
+                color: $text-color-one;
+                @include transition(0.3s);
+                
+                @media #{$lg}{
+                    font-size: 18px;
+                }
+                
+                &:hover{
+                    color: $primary-one;
+                }
+            }
+        }
+        & span{
+            font-size: 14px;
+            line-height: 20px;
+            color: $text-color-three;
+            margin-top: 8px;
+            margin-right: 10px;
+        }
+        & .text{
+            font-size: 14px;
+            line-height: 20px;
+            color: $text-color-one;
+            margin-top: 16px;
+            
+            @media #{$lg}{
+                margin-top: 8px;
+            }
+        }
+        & .more{
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 700;
+            color: $primary-one;
+            margin-top: 29px;
+            
+            @media #{$lg}{
+                margin-top: 16px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

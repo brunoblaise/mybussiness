@@ -1,0 +1,225 @@
+/*===========================
+      06.SERVICE css 
+===========================*/
+
+.service-area {}
+
+
+.service{
+    position: relative;
+    margin-top: 30px;
+    
+    @media #{$md}{
+        margin-top: 0;
+    }
+    @media #{$xs}{
+        margin-top: 0;
+    }
+}
+
+
+
+.single-services{
+    padding-bottom: 45px;
+    position: relative;
+    
+    @media #{$md}{
+        margin-top: 30px;
+        padding-bottom: 0;
+    }
+    
+    @media #{$xs}{
+        margin-top: 30px;
+        padding-bottom: 0;
+    }
+    
+    & .services-shape{
+        width: 30px;
+        height: 30px;
+        background-color: $white;
+        border-radius: 50%;
+        position: relative;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        @include transform(translateX(-50%));
+        z-index: 5;
+        @include transition(0.3s);
+        
+        @media #{$md}{
+            display: none;
+        }
+        @media #{$xs}{
+            display: none;
+        }
+        
+        &::before{
+            position: absolute;
+            content: '';
+            width: 14px;
+            height: 14px;
+            top: 8px;
+            left: 8px;
+            border: 3px solid $theme-color;
+            border-radius: 50%;
+            @include transition(0.3s);
+        }
+    }
+    & .services-separator{
+        width: 100%;
+        height: 1px;
+        background-color: #ededed;
+        position: relative;
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+        
+        @media #{$md}{
+            display: none;
+        }
+        @media #{$xs}{
+            display: none;
+        }
+        
+        &::before{
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 100%;
+            background-color: $theme-color;
+            top: 0;
+            left: 0;
+            @include transition(0.3s);
+        }
+    }
+    
+    & .services-items{
+        position: relative;
+
+        & .services-icon{
+            & i{
+                font-size: 42px;
+                color: $white;
+                width: 70px;
+                height: 70px;
+                line-height: 70px;
+                text-align: center;
+                border-radius: 50%;
+            }
+        }
+        & .services-content{
+            padding-left: 30px;
+            max-width: 280px;
+
+            @media #{$xs}{
+                padding-left: 0;
+                padding-top: 25px;
+            }
+            @media #{$sm}{
+                padding-left: 30px;
+                padding-top: 0;
+            }
+
+            & .title{
+                font-size: 18px;
+                font-weight: 700;
+                color: $black;
+            }
+            & .text{
+                padding-top: 10px;
+                font-size: 16px;
+            }
+        }
+
+        &.services-color-1{
+
+            & .services-icon{
+                & i{
+                    background: -webkit-linear-gradient(left, rgba(28,190,153,1) 0%, rgba(5,222,125,1) 100%);
+                    background: -o-linear-gradient(left, rgba(28,190,153,1) 0%, rgba(5,222,125,1) 100%);
+                    background: linear-gradient(to right, rgba(28,190,153,1) 0%, rgba(5,222,125,1) 100%);
+                }
+            }
+        }
+
+        &.services-color-2{
+
+            & .services-icon{
+                & i{
+                    background: -webkit-linear-gradient(rgba(112,15,235,1) 0%, rgba(254,118,135,1) 100%);
+                    background: -o-linear-gradient(rgba(112,15,235,1) 0%, rgba(254,118,135,1) 100%);
+                    background: linear-gradient(rgba(112,15,235,1) 0%, rgba(254,118,135,1) 100%);
+                }
+            }
+        }
+
+        &.services-color-3{
+
+            & .services-icon{
+                & i{
+                    background: -webkit-linear-gradient(95deg, rgba(62,44,234,1) 0%, rgba(75,179,249,1) 100%);
+                    background: -o-linear-gradient(95deg, rgba(62,44,234,1) 0%, rgba(75,179,249,1) 100%);
+                    background: linear-gradient(185deg, rgba(62,44,234,1) 0%, rgba(75,179,249,1) 100%);
+                }
+            }
+        }
+    }
+    
+    &.services-active{
+        padding-bottom: 0;
+        padding-top: 40px;
+        margin-top: 118px;
+        
+        @media #{$lg}{
+            margin-top: 142px;
+        }
+        @media #{$md}{
+            margin-top: 30px;
+            padding-top: 0;
+        }
+        @media #{$xs}{
+            margin-top: 30px;
+            padding-top: 0;
+        }
+        
+        & .services-shape{
+            bottom: auto;
+            top: 0;
+        }
+        
+        & .services-separator{
+            bottom: auto;
+            top: 15px;   
+        }
+    }
+    
+    &:hover{
+        & .services-shape{
+            background-color: $theme-color;
+            
+            &::before{
+                border-color: $white;
+            }
+        }
+        
+        & .services-separator{
+            &::before{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

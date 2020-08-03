@@ -1,0 +1,36 @@
+
+
+
+/*===========================
+      03.FEATURES css 
+===========================*/
+
+.features_area{}
+
+.single_features{
+    & i{
+        width: 67px;
+        height: 67px;
+        line-height: 67px;
+        text-align: center;
+        background-color: $white;
+        color: $theme-color;
+        border-radius: 50%;
+        @include box-shadow (0px 2px 11px 0px rgba($theme-color, 0.11));
+        font-size: 38px;
+    }
+    & .title{
+        font-size: 24px;
+        margin-top: 25px;
+    }
+    p{
+        margin-top: 15px;
+    }
+}
+
+
+
+
+
+
+

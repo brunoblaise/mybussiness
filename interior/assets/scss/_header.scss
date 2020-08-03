@@ -1,0 +1,262 @@
+
+
+
+/*===========================
+    2.HEADER css 
+===========================*/
+
+
+
+.header-area{
+    position: relative;
+    
+    & .shape{
+        position: absolute;
+    }
+    
+    & .header-shape-one{
+        top: 0;
+        left: 0;
+        
+        @media #{$md}{
+            width: 230px;
+        }
+        @media #{$xs}{
+            width: 180px;
+        }
+    }
+    & .header-shape-tow{
+        top: 25px;
+        left: 31%;
+        @media #{$md}{
+           left: 40%;
+        }
+        @media #{$xs}{
+           left: 60%;
+            width: 60px;
+        }
+    }
+    & .header-shape-three{
+        left: 70px;
+        bottom: 130px;
+        
+        @media #{$xs}{
+            width: 90px;
+            bottom: 200px;
+        }
+    }
+    & .header-shape-fore{
+        left: 48%;
+        bottom: -90px;
+        @include transform(translateX(-50%));
+        @media #{$md}{
+            width: 260px;
+        }
+        @media #{$xs}{
+            bottom: -60px;
+            width: 210px;
+        }
+    }
+    
+    
+}
+
+
+.navigation-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    padding: 25px 0;
+    @include transition(0.4s);
+    
+    &.sticky{
+        position: fixed;
+        background-color: $white;
+        @include box-shadow(0px 5px 21px 0px rgba(254, 119, 101, 0.2));
+        z-index: 99;
+        padding: 15px 0;
+        
+        & .navbar-btn{
+            @media #{$md}{
+                top: 50%;
+                @include transform(translateY(-50%));
+            }
+            @media #{$xs}{
+                top: 50%;
+                @include transform(translateY(-50%));
+            }
+        }
+    }
+}
+
+.navbar{
+    padding: 0;
+    position: relative;
+    
+    & .navbar-brand{
+        img{max-width: 112px;}
+    }
+    
+    & .navbar-toggler{
+        & .toggler-icon{
+            width: 30px;
+            height: 2px;
+            display: block;
+            background-color: $body-text-color;
+            margin: 5px 0;
+        }
+    }
+    & .navbar-collapse{
+        @media #{$md}{
+            position: absolute;
+            top: 128%;
+            width: 100%;
+            left: 0;
+            background-color: $white;
+            padding: 5px 15px;
+            z-index: 9;
+            @include box-shadow(0px 5px 25px 0px rgba(244,128,74,0.3))
+        }
+        @media #{$xs}{
+            position: absolute;
+            top: 128%;
+            width: 100%;
+            left: 0;
+            background-color: $white;
+            padding: 5px 15px;
+            z-index: 9;
+            @include box-shadow(0px 5px 25px 0px rgba(244,128,74,0.3))
+        }
+    }
+    & .navbar-nav{
+        & .nav-item{
+            margin-right: 30px;
+            
+            @media #{$lg}{
+                margin-right: 25px;
+            }
+            @media #{$md}{
+                margin: 5px 0;
+            }
+            @media #{$xs}{
+                margin: 5px 0;
+            }
+            & a{
+                color: $body-text-color;
+                font-family: 'Hind', sans-serif;
+                font-size: 15px;
+                text-transform: uppercase;
+                font-weight: 700;
+                @include transition(0.4s);
+                
+                @media #{$lg}{
+                    font-size: 13px;
+                }
+            }
+            &.active,
+            &:hover{
+                & a{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+    
+    & .navbar-btn{
+        @media #{$md}{
+            position: absolute;
+            right: 70px;
+            top: 0;
+        }
+        @media #{$xs}{
+            position: absolute;
+            right: 70px;
+            top: 0;
+        }
+    }
+}
+
+
+
+
+
+.header-banner{
+    height: 700px;
+    position: relative;
+    
+    @media #{$md}{
+        height: 500px;
+    }
+    @media #{$xs}{
+        height: 500px;
+    }
+    
+    .banner-image{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 55%;
+        height: 100%;
+    }
+    
+    & .banner-content{
+        position: relative;
+        z-index: 9;
+        
+        & .sub-title{
+            font-size: 24px;
+            color: $theme-color;
+            text-transform: uppercase;
+            @media #{$xs}{
+                font-size: 18px;
+            }
+        }
+        & .banner-title{
+            font-size: 60px;
+            
+            & span{
+                color: $theme-color;
+            }
+            
+            @media #{$xs}{
+                font-size: 38px;
+            }
+        }
+        & .banner-contact{
+            position: relative;
+            font-size: 15px;
+            font-weight: 600;
+            font-family: 'Barlow', sans-serif;
+            color: $theme-color;
+            text-transform: uppercase;
+            margin-left: 70px;
+            
+            &::before{
+                position: absolute;
+                content: '';
+                width: 60px;
+                height: 2px;
+                background-color: $theme-color;
+                left: -70px;
+                top: 50%;
+                @include transform(translateY(-50%));
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

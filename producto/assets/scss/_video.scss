@@ -1,0 +1,61 @@
+
+
+
+/*===========================
+      04.VIDEO css 
+===========================*/
+
+.video_area{
+    position: relative;
+    padding-top: 95px;
+    
+    @media #{$desktop}{
+        padding-top: 350px;
+    }
+    
+    & .video_shape{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: 0;
+        
+        & img{
+            width: 100%;
+        }
+    }
+}
+
+
+.video_image{
+    position: relative;
+    
+    & img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    & .video_play{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 50px;
+        height: 50px;
+        line-height: 55px;
+        border-radius: 50%;
+        background-color: $white;
+        color: $theme-color;
+        font-size: 18px;
+        text-align: center;
+        @include transform(translate(-50%, -50%));
+    }
+}
+
+
+
+
+
+
+
+
+
+

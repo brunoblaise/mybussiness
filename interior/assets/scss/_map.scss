@@ -1,0 +1,55 @@
+
+
+
+/*===========================
+         9.MAP css 
+===========================*/
+
+
+.map-area{
+    position: relative;
+    height: 600px;
+    
+    @media #{$md}{
+        height: 450px;
+    }
+    @media #{$xs}{
+        height: 450px;
+    }
+}
+
+.mapouter{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    @media #{$md}{
+        width: 100%;
+    }
+    @media #{$xs}{
+        width: 100%;
+    }
+    & .gmap_canvas{
+        
+        & iframe{
+            width: 100%;
+            height: 600px;
+            @media #{$md}{
+                height: 450px;
+            }
+            @media #{$xs}{
+                height: 450px;
+            }
+        }
+    }
+}
+
+.map-bg{
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+

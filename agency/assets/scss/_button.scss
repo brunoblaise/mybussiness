@@ -1,0 +1,1890 @@
+/*===========================
+    2.BUTTON css 
+===========================*/
+
+
+
+.buttons-title {
+    & .title {
+        font-size: 36px;
+        line-height: 45px;
+        color: $text-color-three;
+        
+        @media #{$xs}{
+            font-size: 24px;
+            line-height: 35;
+        }
+    }
+}
+
+.main-btn {
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    @include user-select(none);
+    border: 2px solid transparent;
+    padding: 0 32px;
+    font-size: 16px;
+    line-height: 48px;
+    color: $primary-one;
+    cursor: pointer;
+    z-index: 5;
+    @include transition(0.4s);
+    position: relative;
+    text-transform: uppercase;
+    
+    @media #{$xs}{
+        font-size: 14px;
+        padding: 0 20px;
+        line-height: 40px;
+    }
+}
+
+.standard-buttons-area {}
+
+
+
+/*===== standard Buttons =====*/
+
+.standard-buttons {
+    & ul {
+        & li {
+            display: inline-block;
+            margin-left: 18px;
+            margin-top: 20px;
+            
+            @media #{$xs}{
+                margin-left: 0;
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    & .standard-one {
+        border-color: $primary-one;
+
+        &:hover {
+            color: $white;
+            background-color: $primary-one;
+        }
+    }
+
+    & .standard-two {
+        color: $white;
+        background-color: $primary-one;
+        border-color: $primary-one;
+
+        &:hover {
+            color: $primary-one;
+            background-color: transparent;
+        }
+    }
+
+    & .standard-three {
+        overflow: hidden;
+        line-height: 50px;
+        color: $white;
+        background: -webkit-linear-gradient(left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        background: -o-linear-gradient(left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        background: linear-gradient(to right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        border: 0;
+        line-height: 52px;
+
+
+        &:hover {
+            background: -webkit-linear-gradient(right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+            background: -o-linear-gradient(right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+            background: linear-gradient(to left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        }
+    }
+
+    & .standard-four {
+        border-color: $primary-one;
+        padding-left: 60px;
+        
+        @media #{$xs}{
+            padding-left: 40px;
+        }
+
+        & span {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            overflow: hidden;
+            left: 30px;
+            line-height: normal;
+            
+            @media #{$xs}{
+                left: 15px;
+            }
+        }
+
+        &:hover {
+            color: $white;
+            background-color: $primary-one;
+
+            & i {
+                animation: iconTranslateY 0.5s forwards;
+            }
+        }
+    }
+
+    & .standard-five {
+        color: $white;
+        background-color: $primary-one;
+        border-color: $primary-one;
+        padding-left: 60px;
+        @media #{$xs}{
+            padding-left: 40px;
+        }
+
+        
+
+        & span {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            overflow: hidden;
+            left: 30px;
+            line-height: normal;
+            
+            @media #{$xs}{
+                left: 15px;
+            }
+        }
+
+        &:hover {
+            color: $primary-one;
+            background-color: transparent;
+
+            & i {
+                animation: iconTranslateY 0.5s forwards;
+            }
+        }
+    }
+
+    & .standard-six {
+        padding-right: 60px;
+        overflow: hidden;
+        line-height: 50px;
+        color: $white;
+        background: -webkit-linear-gradient(left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        background: -o-linear-gradient(left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        background: linear-gradient(to right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        border: 0;
+        line-height: 52px;
+        
+        @media #{$xs}{
+            padding-right: 40px;
+        }
+
+        & span {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            overflow: hidden;
+            right: 30px;
+            line-height: normal;
+            
+            @media #{$xs}{
+                right: 15px;
+            }
+        }
+
+        &:hover {
+            background: -webkit-linear-gradient(right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+            background: -o-linear-gradient(right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+            background: linear-gradient(to left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+            
+            & i {
+                @include animation(iconTranslateY 0.5s forwards);
+            }
+        }
+    }        
+}
+
+
+/*===== Light Rounded Buttons =====*/
+
+.light-rounded-buttons {
+    & ul {
+        & li {
+            display: inline-block;
+            margin-left: 18px;
+            margin-top: 20px;
+            
+            @media #{$xs}{
+                margin-left: 0;
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+    
+    & a.main-btn {
+        border-radius: 5px;
+    }
+    
+    & .light-rounded-one {
+        border-color: $primary-one;
+
+        &:hover {
+            color: $white;
+            background-color: $primary-one;
+        }
+    }
+
+    & .light-rounded-two {
+        color: $white;
+        background-color: $primary-one;
+        border-color: $primary-one;
+
+        &:hover {
+            color: $primary-one;
+            background-color: transparent;
+        }
+    }
+
+    & .light-rounded-three  {
+        overflow: hidden;
+        line-height: 50px;
+        color: $white;
+        background: -webkit-linear-gradient(left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        background: -o-linear-gradient(left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        background: linear-gradient(to right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        line-height: 52px;
+        border: 0;
+
+        &:hover {
+            background: -webkit-linear-gradient(right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+            background: -o-linear-gradient(right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+            background: linear-gradient(to left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        }
+    }
+
+    & .light-rounded-four  {
+        border-color: $primary-one;
+        padding-left: 60px;
+        
+        @media #{$xs}{
+            padding-left: 40px;
+        }
+
+        & span {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            overflow: hidden;
+            left: 30px;
+            line-height: normal;
+            
+            @media #{$xs}{
+                left: 15px;
+            }
+        }
+
+        &:hover {
+            color: $white;
+            background-color: $primary-one;
+
+            & i {
+                @include animation(iconTranslateY 0.5s forwards);
+            }
+        }
+    }
+
+    & .light-rounded-five  {
+        color: $white;
+        background-color: $primary-one;
+        border-color: $primary-one;
+        padding-left: 60px;
+        
+        @media #{$xs}{
+            padding-left: 40px;
+        }
+
+        & span {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            overflow: hidden;
+            left: 30px;
+            line-height: normal;
+            
+            @media #{$xs}{
+                left: 15px;
+            }
+        }
+
+        &:hover {
+            color: $primary-one;
+            background-color: transparent;
+
+            & i {
+                @include animation(iconTranslateY 0.5s forwards);
+            }
+        }
+    }
+
+    & .light-rounded-six {
+        padding-right: 60px;
+        overflow: hidden;
+        line-height: 50px;
+        color: $white;
+        background: -webkit-linear-gradient(left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        background: -o-linear-gradient(left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        background: linear-gradient(to right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        line-height: 52px;
+        border: 0;
+        
+        @media #{$xs}{
+            padding-right: 40px;
+        }
+
+        & span {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            overflow: hidden;
+            right: 30px;
+            line-height: normal;
+            
+            @media #{$xs}{
+                right: 15px;
+            }
+        }
+
+        &:hover {
+            background: -webkit-linear-gradient(right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+            background: -o-linear-gradient(right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+            background: linear-gradient(to left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+            
+            & i {
+                @include animation(iconTranslateY 0.5s forwards);
+            }
+        }
+    }
+}
+
+/*===== Semi Rounded Buttons =====*/
+
+.semi-rounded-buttons {
+    & ul {
+        & li {
+            display: inline-block;
+            margin-left: 18px;
+            margin-top: 20px;
+            
+            @media #{$xs}{
+                margin-left: 0;
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    & a.main-btn {
+        border-radius: 10px;
+    }
+    
+    & .semi-rounded-one {
+        border-color: $primary-one;
+
+        &:hover {
+            color: $white;
+            background-color: $primary-one;
+        }
+    }
+
+    & .semi-rounded-two {
+        color: $white;
+        background-color: $primary-one;
+        border-color: $primary-one;
+
+        &:hover {
+            color: $primary-one;
+            background-color: transparent;
+        }
+    }
+
+    & .semi-rounded-three {
+        overflow: hidden;
+        line-height: 52px;
+        background: -webkit-linear-gradient(left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        background: -o-linear-gradient(left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        background: linear-gradient(to right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        border: 0;
+        color: $white;
+
+        &:hover {
+            background: -webkit-linear-gradient(right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+            background: -o-linear-gradient(right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+            background: linear-gradient(to left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        }
+    }
+
+    & .semi-rounded-four  {
+        border-color: $primary-one;
+        padding-left: 60px;
+        
+        @media #{$xs}{
+            padding-left: 40px;
+        }
+
+
+        & span {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            overflow: hidden;
+            left: 30px;
+            line-height: normal;
+            
+            @media #{$xs}{
+                left: 15px;
+            }
+        }
+
+        &:hover {
+            color: $white;
+            background-color: $primary-one;
+
+            & i {
+                @include animation(iconTranslateY 0.5s forwards);
+            }
+        }
+    }
+
+    & .semi-rounded-five  {
+        color: $white;
+        background-color: $primary-one;
+        border-color: $primary-one;
+        padding-left: 60px;
+        
+        @media #{$xs}{
+            padding-left: 40px;
+        }
+
+        & span {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            overflow: hidden;
+            left: 30px;
+            line-height: normal;
+            
+            @media #{$xs}{
+                left: 15px;
+            }
+        }
+
+        &:hover {
+            color: $primary-one;
+            background-color: transparent;
+
+            & i {
+                @include animation(iconTranslateY 0.5s forwards);
+            }
+        }
+    }
+
+    & .semi-rounded-six {
+        padding-right: 60px;
+        overflow: hidden;
+        line-height: 52px;
+        background: -webkit-linear-gradient(left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        background: -o-linear-gradient(left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        background: linear-gradient(to right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        border: 0;
+        color: $white;
+        
+        @media #{$xs}{
+            padding-right: 40px;
+        }
+
+        & span {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            overflow: hidden;
+            right: 30px;
+            line-height: normal;
+            
+            @media #{$xs}{
+                right: 15px;
+            }
+        }
+
+        &:hover {
+            background: -webkit-linear-gradient(right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+            background: -o-linear-gradient(right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+            background: linear-gradient(to left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+            
+            & i {
+                @include animation(iconTranslateY 0.5s forwards);
+            }
+        }
+    }
+}
+
+
+/*===== Rounded Buttons =====*/
+
+.rounded-buttons {
+    & ul {
+        & li {
+            display: inline-block;
+            margin-left: 18px;
+            margin-top: 20px;
+            
+            @media #{$xs}{
+                margin-left: 0;
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+    
+    & a.main-btn {
+        border-radius: 50px;
+    }
+
+    & .rounded-one {
+        border-color: $primary-one;
+
+        &:hover {
+            color: $white;
+            background-color: $primary-one;
+        }
+    }
+
+    & .rounded-two {
+        color: $white;
+        background-color: $primary-one;
+        border-color: $primary-one;
+
+        &:hover {
+            color: $primary-one;
+            background-color: transparent;
+        }
+    }
+
+    & .rounded-three {
+        overflow: hidden;
+        line-height: 52px;
+        background: -webkit-linear-gradient(left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        background: -o-linear-gradient(left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        background: linear-gradient(to right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        color: $white;
+        border: 0;
+
+        &:hover {
+            background: -webkit-linear-gradient(right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+            background: -o-linear-gradient(right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+            background: linear-gradient(to left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        }
+    }
+
+    & .rounded-four {
+        border-color: $primary-one;
+        padding-left: 60px;
+        
+        @media #{$xs}{
+            padding-left: 40px;
+        }
+
+        & span {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            overflow: hidden;
+            left: 30px;
+            line-height: normal;
+            
+            @media #{$xs}{
+                left: 15px;
+            }
+        }
+
+        &:hover {
+            color: $white;
+            background-color: $primary-one;
+
+            & i {
+                @include animation(iconTranslateY 0.5s forwards);
+            }
+        }
+    }
+
+    & .rounded-five {
+        color: $white;
+        background-color: $primary-one;
+        border-color: $primary-one;
+        padding-left: 60px;
+        
+        @media #{$xs}{
+            padding-left: 40px;
+        }
+
+        & span {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            overflow: hidden;
+            left: 30px;
+            line-height: normal;
+            
+            @media #{$xs}{
+                left: 15px;
+            }
+        }
+
+        &:hover {
+            color: $primary-one;
+            background-color: transparent;
+
+            & i {
+                @include animation(iconTranslateY 0.5s forwards);
+            }
+        }
+    }
+
+    & .rounded-six {
+        padding-right: 60px;
+        overflow: hidden;
+        line-height: 52px;
+        background: -webkit-linear-gradient(left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        background: -o-linear-gradient(left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        background: linear-gradient(to right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+        color: $white;
+        border: 0;
+        
+        @media #{$xs}{
+            padding-right: 40px;
+        }
+
+        & span {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            overflow: hidden;
+            right: 30px;
+            line-height: normal;
+            
+            @media #{$xs}{
+                right: 15px;
+            }
+        }
+
+        &:hover {
+            background: -webkit-linear-gradient(right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+            background: -o-linear-gradient(right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+            background: linear-gradient(to left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+            
+            & i {
+                @include animation(iconTranslateY 0.5s forwards);
+            }
+        }
+    }
+}
+
+
+/*===== Success Buttons =====*/
+
+.success-buttons {
+    & ul {
+        & li {
+            display: inline-block;
+            margin-left: 18px;
+            margin-top: 20px;
+            
+            @media #{$xs}{
+                margin-left: 0;
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    & .success-one {
+        border-color: $success-color-one;
+        color: $success-color-one;
+
+        &:hover {
+            color: $white;
+            background-color: $success-color-one;
+        }
+    }
+
+    & .success-two {
+        color: $white;
+        background-color: $success-color-one;
+        border-color: $success-color-one;
+
+        &:hover {
+            color: $success-color-one;
+            background-color: transparent;
+        }
+    }
+
+    & .success-three  {
+        overflow: hidden;
+        line-height: 52px;
+        color: $white;
+        border: 0;
+        background: -webkit-linear-gradient(left, rgba(77, 164, 34, 1) 0%, rgba(105, 224, 46, 1) 100%);
+        background: -o-linear-gradient(left, rgba(77, 164, 34, 1) 0%, rgba(105, 224, 46, 1) 100%);
+        background: linear-gradient(to right, rgba(77, 164, 34, 1) 0%, rgba(105, 224, 46, 1) 100%);
+
+        &:hover {
+            background: -webkit-linear-gradient(right, rgba(77, 164, 34, 1) 0%, rgba(105, 224, 46, 1) 100%);
+            background: -o-linear-gradient(right, rgba(77, 164, 34, 1) 0%, rgba(105, 224, 46, 1) 100%);
+            background: linear-gradient(to left, rgba(77, 164, 34, 1) 0%, rgba(105, 224, 46, 1) 100%);
+        }
+    }
+
+    & .success-four {
+        padding-left: 60px;        
+        border-color: $success-color-one;
+        color: $success-color-one;
+        
+        @media #{$xs}{
+            padding-left: 40px;
+        }
+        
+        & span {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            overflow: hidden;
+            left: 30px;
+            line-height: normal;
+            
+            @media #{$xs}{
+                left: 15px;
+            }
+        }
+
+        &:hover {
+            color: $white;
+            background-color: $success-color-one;
+
+            & i {
+                @include animation(iconTranslateY 0.5s forwards);
+            }
+        }
+    }
+
+    & .success-five {
+        padding-left: 60px;        
+        color: $white;
+        background-color: $success-color-one;
+        border-color: $success-color-one;
+        
+        @media #{$xs}{
+            padding-left: 40px;
+        }
+        
+        & span {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            overflow: hidden;
+            left: 30px;
+            line-height: normal;
+            
+            @media #{$xs}{
+                left: 15px;
+            }
+        }
+
+        &:hover {
+            color: $success-color-one;
+            background-color: transparent;
+
+            & i {
+                @include animation(iconTranslateY 0.5s forwards);
+            }
+        }
+    }
+
+    & .success-six {
+        padding-right: 60px;        
+        overflow: hidden;
+        line-height: 52px;
+        color: $white;
+        border: 0;
+        background: -webkit-linear-gradient(left, rgba(77, 164, 34, 1) 0%, rgba(105, 224, 46, 1) 100%);
+        background: -o-linear-gradient(left, rgba(77, 164, 34, 1) 0%, rgba(105, 224, 46, 1) 100%);
+        background: linear-gradient(to right, rgba(77, 164, 34, 1) 0%, rgba(105, 224, 46, 1) 100%);
+        
+        @media #{$xs}{
+            padding-right: 40px;
+        }
+        
+        & span {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            overflow: hidden;
+            right: 30px;
+            line-height: normal;
+            
+            @media #{$xs}{
+                right: 15px;
+            }
+        }
+
+        &:hover {
+            background: -webkit-linear-gradient(right, rgba(77, 164, 34, 1) 0%, rgba(105, 224, 46, 1) 100%);
+            background: -o-linear-gradient(right, rgba(77, 164, 34, 1) 0%, rgba(105, 224, 46, 1) 100%);
+            background: linear-gradient(to left, rgba(77, 164, 34, 1) 0%, rgba(105, 224, 46, 1) 100%);
+
+            & i {
+                @include animation(iconTranslateY 0.5s forwards);
+            }
+        }
+    }
+}
+
+
+/*===== Warning Buttons =====*/
+
+.warning-buttons {
+    & ul {
+        & li {
+            display: inline-block;
+            margin-left: 18px;
+            margin-top: 20px;
+            
+            @media #{$xs}{
+                margin-left: 0;
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    & .warning-one {
+        border-color: $warning-color-one;
+        color: $warning-color-one;
+
+        &:hover {
+            color: $white;
+            background-color: $warning-color-one;
+        }
+    }
+
+    & .warning-two {
+        color: $white;
+        background-color: $warning-color-one;
+        border-color: $warning-color-one;
+
+        &:hover {
+            color: $warning-color-one;
+            background-color: transparent;
+        }
+    }
+
+    & .warning-three {        
+        overflow: hidden;
+        line-height: 52px;
+        color: $white;
+        border: 0;
+        background: -webkit-linear-gradient(left, rgba(255, 180, 0, 1) 0%, rgba(247, 229, 0, 1) 100%);
+        background: -o-linear-gradient(left, rgba(255, 180, 0, 1) 0%, rgba(247, 229, 0, 1) 100%);
+        background: linear-gradient(to right, rgba(255, 180, 0, 1) 0%, rgba(247, 229, 0, 1) 100%);
+
+        &:hover {
+            background: -webkit-linear-gradient(right, rgba(255, 180, 0, 1) 0%, rgba(247, 229, 0, 1) 100%);
+            background: -o-linear-gradient(right, rgba(255, 180, 0, 1) 0%, rgba(247, 229, 0, 1) 100%);
+            background: linear-gradient(to left, rgba(255, 180, 0, 1) 0%, rgba(247, 229, 0, 1) 100%);
+        }
+    }
+    
+    & .warning-four {
+        padding-left: 60px;        
+        border-color: $warning-color-one;
+        color: $warning-color-one;
+        
+        @media #{$xs}{
+            padding-left: 40px;
+        }
+        
+        & span {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            overflow: hidden;
+            left: 30px;
+            line-height: normal;
+            
+            @media #{$xs}{
+                left: 15px;
+            }
+        }
+
+        &:hover {
+            color: $white;
+            background-color: $warning-color-one;
+
+            & i {
+                @include animation(iconTranslateY 0.5s forwards);
+            }
+        }
+    }
+
+    & .warning-five {
+        padding-left: 60px;        
+        color: $white;
+        background-color: $warning-color-one;
+        border-color: $warning-color-one;
+        
+        @media #{$xs}{
+            padding-left: 40px;
+        }
+        
+        & span {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            overflow: hidden;
+            left: 30px;
+            line-height: normal;
+            
+            @media #{$xs}{
+                left: 15px;
+            }
+        }
+
+        &:hover {
+            color: $warning-color-one;
+            background-color: transparent;
+
+            & i {
+                @include animation(iconTranslateY 0.5s forwards);
+            }
+        }
+    }
+
+    & .warning-six {
+        padding-right: 60px;        
+        overflow: hidden;
+        line-height: 52px;
+        color: $white;
+        border: 0;
+        background: -webkit-linear-gradient(left, rgba(255, 180, 0, 1) 0%, rgba(247, 229, 0, 1) 100%);
+        background: -o-linear-gradient(left, rgba(255, 180, 0, 1) 0%, rgba(247, 229, 0, 1) 100%);
+        background: linear-gradient(to right, rgba(255, 180, 0, 1) 0%, rgba(247, 229, 0, 1) 100%);
+        
+        @media #{$xs}{
+            padding-right: 40px;
+        }
+        
+        & span {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            overflow: hidden;
+            right: 30px;
+            line-height: normal;
+            
+            @media #{$xs}{
+                right: 15px;
+            }
+        }
+
+        &:hover {
+            background: -webkit-linear-gradient(right, rgba(255, 180, 0, 1) 0%, rgba(247, 229, 0, 1) 100%);
+            background: -o-linear-gradient(right, rgba(255, 180, 0, 1) 0%, rgba(247, 229, 0, 1) 100%);
+            background: linear-gradient(to left, rgba(255, 180, 0, 1) 0%, rgba(247, 229, 0, 1) 100%);
+
+            & i {
+                @include animation(iconTranslateY 0.5s forwards);
+            }
+        }
+    }
+}
+
+
+/*===== Info Buttons =====*/
+
+.info-buttons {
+    & ul {
+        & li {
+            display: inline-block;
+            margin-left: 18px;
+            margin-top: 20px;
+            
+            @media #{$xs}{
+                margin-left: 0;
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    } 
+    
+    & .info-one {
+        border-color: $info-color-one;
+        color: $info-color-one;
+
+        &:hover {
+            color: $white;
+            background-color: $info-color-one;
+        }
+    }
+
+    & .info-two {
+        color: $white;
+        background-color: $info-color-one;
+        border-color: $info-color-one;
+
+        &:hover {
+            color: $info-color-one;
+            background-color: transparent;
+        }
+    }
+
+    & .info-three {        
+        overflow: hidden;
+        line-height: 52px;
+        color: $white;
+        border: 0;
+        background: -webkit-linear-gradient(left, rgba(0, 184, 216, 1) 0%, rgba(50, 251, 252, 1) 100%);
+        background: -o-linear-gradient(left, rgba(0, 184, 216, 1) 0%, rgba(50, 251, 252, 1) 100%);
+        background: linear-gradient(to right, rgba(0, 184, 216, 1) 0%, rgba(50, 251, 252, 1) 100%);
+
+        &:hover {
+            background: -webkit-linear-gradient(right, rgba(0, 184, 216, 1) 0%, rgba(50, 251, 252, 1) 100%);
+            background: -o-linear-gradient(right, rgba(0, 184, 216, 1) 0%, rgba(50, 251, 252, 1) 100%);
+            background: linear-gradient(to left, rgba(0, 184, 216, 1) 0%, rgba(50, 251, 252, 1) 100%);
+        }
+    }
+    
+    & .info-four {
+        padding-left: 60px;        
+        border-color: $info-color-one;
+        color: $info-color-one;
+        
+        @media #{$xs}{
+            padding-left: 40px;
+        }
+        
+        & span {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            overflow: hidden;
+            left: 30px;
+            line-height: normal;
+            
+            @media #{$xs}{
+                left: 15px;
+            }
+        }
+
+        &:hover {
+            color: $white;
+            background-color: $info-color-one;
+
+            & i {
+                @include animation(iconTranslateY 0.5s forwards);
+            }
+        }
+    }
+
+    & .info-five {
+        padding-left: 60px;        
+        color: $white;
+        background-color: $info-color-one;
+        border-color: $info-color-one;
+        
+        @media #{$xs}{
+            padding-left: 40px;
+        }
+        
+        & span {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            overflow: hidden;
+            left: 30px;
+            line-height: normal;
+            
+            @media #{$xs}{
+                left: 15px;
+            }
+        }
+
+        &:hover {
+            color: $info-color-one;
+            background-color: transparent;
+
+            & i {
+                @include animation(iconTranslateY 0.5s forwards);
+            }
+        }
+    }
+
+    & .info-six {
+        padding-right: 60px;        
+        overflow: hidden;
+        line-height: 52px;
+        color: $white;
+        border: 0;
+        background: -webkit-linear-gradient(left, rgba(0, 184, 216, 1) 0%, rgba(50, 251, 252, 1) 100%);
+        background: -o-linear-gradient(left, rgba(0, 184, 216, 1) 0%, rgba(50, 251, 252, 1) 100%);
+        background: linear-gradient(to right, rgba(0, 184, 216, 1) 0%, rgba(50, 251, 252, 1) 100%);
+        
+        @media #{$xs}{
+            padding-right: 40px;
+        }
+        
+        & span {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            overflow: hidden;
+            right: 30px;
+            line-height: normal;
+            
+            @media #{$xs}{
+                right: 15px;
+            }
+        }
+
+        &:hover {
+            background: -webkit-linear-gradient(right, rgba(0, 184, 216, 1) 0%, rgba(50, 251, 252, 1) 100%);
+            background: -o-linear-gradient(right, rgba(0, 184, 216, 1) 0%, rgba(50, 251, 252, 1) 100%);
+            background: linear-gradient(to left, rgba(0, 184, 216, 1) 0%, rgba(50, 251, 252, 1) 100%);
+
+            & i {
+                @include animation(iconTranslateY 0.5s forwards);
+            }
+        }
+    }
+}
+
+
+/*===== Danger Buttons =====*/
+
+.danger-buttons {
+    & ul {
+        & li {
+            display: inline-block;
+            margin-left: 18px;
+            margin-top: 20px;
+            
+            @media #{$xs}{
+                margin-left: 0;
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    & .danger-one {
+        border-color: $danger-color-one;
+        color: $danger-color-one;
+
+        &:hover {
+            color: $white;
+            background-color: $danger-color-one;
+        }
+    }    
+    
+    & .danger-one {
+        border-color: $danger-color-one;
+        color: $danger-color-one;
+
+        &:hover {
+            color: $white;
+            background-color: $danger-color-one;
+        }
+    }
+
+    & .danger-two {
+        color: $white;
+        background-color: $danger-color-one;
+        border-color: $danger-color-one;
+
+        &:hover {
+            color: $danger-color-one;
+            background-color: transparent;
+        }
+    }
+
+    & .danger-three {        
+        overflow: hidden;
+        line-height: 52px;
+        color: $white;
+        border: 0;
+        background: -webkit-linear-gradient(left, rgba(252, 56, 50, 1) 0%, rgba(220, 49, 43, 1) 100%);
+        background: -o-linear-gradient(left, rgba(252, 56, 50, 1) 0%, rgba(220, 49, 43, 1) 100%);
+        background: linear-gradient(to right, rgba(252, 56, 50, 1) 0%, rgba(220, 49, 43, 1) 100%);
+
+        &:hover {
+            background: -webkit-linear-gradient(right, rgba(252, 56, 50, 1) 0%, rgba(220, 49, 43, 1) 100%);
+            background: -o-linear-gradient(right, rgba(252, 56, 50, 1) 0%, rgba(220, 49, 43, 1) 100%);
+            background: linear-gradient(to left, rgba(252, 56, 50, 1) 0%, rgba(220, 49, 43, 1) 100%);
+        }
+    }
+    
+    & .danger-four {
+        padding-left: 60px;        
+        border-color: $danger-color-one;
+        color: $danger-color-one;
+        
+        @media #{$xs}{
+            padding-left: 40px;
+        }
+        
+        & span {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            overflow: hidden;
+            left: 30px;
+            line-height: normal;
+            
+            @media #{$xs}{
+                left: 15px;
+            }
+        }
+
+        &:hover {
+            color: $white;
+            background-color: $danger-color-one;
+
+            & i {
+                @include animation(iconTranslateY 0.5s forwards);
+            }
+        }
+    }
+
+    & .danger-five {
+        padding-left: 60px;        
+        color: $white;
+        background-color: $danger-color-one;
+        border-color: $danger-color-one;
+        
+        @media #{$xs}{
+            padding-left: 40px;
+        }
+        
+        & span {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            overflow: hidden;
+            left: 30px;
+            line-height: normal;
+            
+            @media #{$xs}{
+                left: 15px;
+            }
+        }
+
+        &:hover {
+            color: $danger-color-one;
+            background-color: transparent;
+
+            & i {
+                @include animation(iconTranslateY 0.5s forwards);
+            }
+        }
+    }
+
+    & .danger-six {
+        padding-right: 60px;        
+        overflow: hidden;
+        line-height: 52px;
+        color: $white;
+        border: 0;
+        background: -webkit-linear-gradient(left, rgba(252, 56, 50, 1) 0%, rgba(220, 49, 43, 1) 100%);
+        background: -o-linear-gradient(left, rgba(252, 56, 50, 1) 0%, rgba(220, 49, 43, 1) 100%);
+        background: linear-gradient(to right, rgba(252, 56, 50, 1) 0%, rgba(220, 49, 43, 1) 100%);
+        
+        @media #{$xs}{
+            padding-right: 40px;
+        }
+        
+        & span {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            overflow: hidden;
+            right: 30px;
+            line-height: normal;
+            
+            @media #{$xs}{
+                right: 15px;
+            }
+        }
+
+        &:hover {
+            background: -webkit-linear-gradient(right, rgba(252, 56, 50, 1) 0%, rgba(220, 49, 43, 1) 100%);
+            background: -o-linear-gradient(right, rgba(252, 56, 50, 1) 0%, rgba(220, 49, 43, 1) 100%);
+            background: linear-gradient(to left, rgba(252, 56, 50, 1) 0%, rgba(220, 49, 43, 1) 100%);
+
+            & i {
+                @include animation(iconTranslateY 0.5s forwards);
+            }
+        }
+    }
+}
+
+
+
+@-webkit-keyframes iconTranslateY {
+    49% {
+        -webkit-transform: translateY(100%);
+    }
+
+    50% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+    }
+
+    51% {
+        opacity: 1;
+    }
+}
+
+
+@-moz-keyframes iconTranslateY {
+    49% {
+        -webkit-transform: translateY(100%);
+    }
+
+    50% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+    }
+
+    51% {
+        opacity: 1;
+    }
+}
+
+@keyframes iconTranslateY {
+    49% {
+        -webkit-transform: translateY(100%);
+    }
+
+    50% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+    }
+
+    51% {
+        opacity: 1;
+    }
+}
+
+
+.lg-btn {
+    line-height: 64px !important;
+    font-size: 18px;
+    
+    @media #{$xs}{
+        font-size: 16px;
+        ine-height: 52px;
+    }
+}
+
+.el-btn {
+    line-height: 80px !important;
+    font-size: 20px;
+    
+    @media #{$xs}{
+        font-size: 18px;
+        line-height: 74px;
+    }
+}
+
+.sm-btn {
+    line-height: 40px !important;
+    font-size: 12px;
+}
+
+
+
+/*===== Regular Icon Buttons =====*/
+
+
+
+.regular-icon-buttons {
+    & ul {
+        & li {
+            display: inline-block;
+            margin-left: 10px;
+            margin-top: 20px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            & .regular-icon-light-one {
+                width: 40px;
+                height: 40px;
+                line-height: 36px;
+                border: 2px solid $primary-one;
+                text-align: center;
+                font-size: 24px;
+                @include transition(0.3s);
+                overflow: hidden;
+                color: $primary-one;
+
+                &:hover {
+                    color: $white;
+                    background-color: $primary-one;
+                }
+            }
+
+            & .regular-icon-light-two {
+                width: 40px;
+                height: 40px;
+                line-height: 36px;
+                border: 2px solid $primary-one;
+                text-align: center;
+                font-size: 24px;
+                border-radius: 5px;
+                @include transition(0.3s);
+                overflow: hidden;
+                color: $primary-one;
+
+                &:hover {
+                    color: $white;
+                    background-color: $primary-one;
+                }
+            }
+
+            & .regular-icon-light-three {
+                width: 40px;
+                height: 40px;
+                line-height: 36px;
+                border: 2px solid $primary-one;
+                text-align: center;
+                font-size: 24px;
+                border-radius: 10px;
+                @include transition(0.3s);
+                overflow: hidden;
+                color: $primary-one;
+
+                &:hover {
+                    color: $white;
+                    background-color: $primary-one;
+                }
+            }
+
+            & .regular-icon-light-four {
+                width: 40px;
+                height: 40px;
+                line-height: 36px;
+                border: 2px solid $primary-one;
+                text-align: center;
+                font-size: 24px;
+                border-radius: 50%;
+                @include transition(0.3s);
+                overflow: hidden;
+
+                &:hover {
+                    color: $white;
+                    background-color: $primary-one;
+                }
+            }
+
+            & .regular-icon-light-five {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                border: 0;
+                text-align: center;
+                font-size: 24px;
+                @include transition(0.3s);
+                position: relative;
+                z-index: 5;
+                overflow: hidden;
+                color: $white;
+                background: -webkit-linear-gradient(left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+                background: -o-linear-gradient(left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+                background: linear-gradient(to right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+
+                &:hover {
+                    background: -webkit-linear-gradient(right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+                    background: -o-linear-gradient(right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+                    background: linear-gradient(to left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+                }
+            }
+
+            & .regular-icon-light-six {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                border: 0;
+                text-align: center;
+                font-size: 24px;
+                @include transition(0.3s);
+                position: relative;
+                z-index: 5;
+                overflow: hidden;
+                color: $white;
+                background: -webkit-linear-gradient(left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+                background: -o-linear-gradient(left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+                background: linear-gradient(to right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+                border-radius: 5px;
+
+                &:hover {
+                    background: -webkit-linear-gradient(right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+                    background: -o-linear-gradient(right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+                    background: linear-gradient(to left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+                }
+            }
+
+            & .regular-icon-light-seven {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                border: 0;
+                text-align: center;
+                font-size: 24px;
+                @include transition(0.3s);
+                position: relative;
+                z-index: 5;
+                overflow: hidden;
+                color: $white;
+                background: -webkit-linear-gradient(left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+                background: -o-linear-gradient(left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+                background: linear-gradient(to right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+                border-radius: 10px;
+
+                &:hover {
+                    background: -webkit-linear-gradient(right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+                    background: -o-linear-gradient(right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+                    background: linear-gradient(to left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+                }
+            }
+
+            & .regular-icon-light-eight {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                border: 0;
+                text-align: center;
+                font-size: 24px;
+                @include transition(0.3s);
+                position: relative;
+                z-index: 5;
+                overflow: hidden;
+                color: $white;
+                background: -webkit-linear-gradient(left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+                background: -o-linear-gradient(left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+                background: linear-gradient(to right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+                border-radius: 50%;
+
+                &:hover {
+                    background: -webkit-linear-gradient(right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+                    background: -o-linear-gradient(right, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+                    background: linear-gradient(to left, rgba(0, 103, 244, 1) 0%, rgba(43, 219, 220, 1) 100%);
+                }
+            }
+
+            & .regular-icon-light-nine {
+                width: 40px;
+                height: 40px;
+                line-height: 36px;
+                border: 2px solid $primary-one;
+                text-align: center;
+                font-size: 24px;
+                @include transition(0.3s);
+                overflow: hidden;
+                color: $white;
+                background-color: $primary-one;
+
+                &:hover {
+                    color: $primary-one;
+                    background-color: transparent;
+                }
+            }
+
+            & .regular-icon-light-ten {
+                width: 40px;
+                height: 40px;
+                line-height: 36px;
+                border: 2px solid $primary-one;
+                text-align: center;
+                font-size: 24px;
+                border-radius: 5px;
+                @include transition(0.3s);
+                overflow: hidden;
+                color: $white;
+                background-color: $primary-one;
+
+                &:hover {
+                    color: $primary-one;
+                    background-color: transparent;
+                }
+            }
+
+            & .regular-icon-light-eleven {
+                width: 40px;
+                height: 40px;
+                line-height: 36px;
+                border: 2px solid $primary-one;
+                text-align: center;
+                font-size: 24px;
+                border-radius: 10px;
+                @include transition(0.3s);
+                overflow: hidden;
+                color: $white;
+                background-color: $primary-one;
+
+                &:hover {
+                    color: $primary-one;
+                    background-color: transparent;
+                }
+            }
+
+            & .regular-icon-light-twelve {
+                width: 40px;
+                height: 40px;
+                line-height: 36px;
+                border: 2px solid $primary-one;
+                text-align: center;
+                font-size: 24px;
+                border-radius: 50%;
+                @include transition(0.3s);
+                overflow: hidden;
+                color: $white;
+                background-color: $primary-one;
+
+                &:hover {
+                    color: $primary-one;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*===== Group Buttons =====*/
+
+.group-buttons {
+    & .btn-group{
+        margin-left: 30px;
+    }
+    & .group-one {
+        margin-left: 0;
+        
+        & .main-btn {
+            background: none;
+            border: 2px solid $primary-one;
+            @include transition(0.3s);
+
+            &:first-child {
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-right: 0;
+            }
+
+            &:last-child {
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-left: 0;
+            }
+
+            &:hover {
+                background-color: $primary-one;
+                color: $white;
+            }
+        }
+    }
+
+    & .group-two {
+        & .main-btn {
+            background: none;
+            @include transition(0.3s);
+            overflow: hidden;
+            color: $white;
+            line-height: 52px;
+            background: -webkit-linear-gradient(rgba(0,103,244,1) 0%, rgba(43,219,220,1) 100%);
+            background: -o-linear-gradient(rgba(0,103,244,1) 0%, rgba(43,219,220,1) 100%);
+            background: linear-gradient(rgba(0,103,244,1) 0%, rgba(43,219,220,1) 100%);
+            border-top: 0;
+            border-bottom: 0;
+            border-color: rgba(244, 246, 247, 0.2);
+
+            &:first-child {
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-right: 0;
+            }
+
+            &:last-child {
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-left: 0;
+            }
+
+            &:hover {
+                background: -webkit-linear-gradient(bottom, rgba(0,103,244,1) 0%, rgba(43,219,220,1) 100%);
+                background: -o-linear-gradient(bottom, rgba(0,103,244,1) 0%, rgba(43,219,220,1) 100%);
+                background: linear-gradient(to top, rgba(0,103,244,1) 0%, rgba(43,219,220,1) 100%);
+            }
+        }
+    }
+
+    & .group-three {
+        & .main-btn {
+            background: none;
+            @include transition(0.3s);
+            overflow: hidden;
+            color: $white;
+            line-height: 52px;
+            background: -webkit-linear-gradient(left, rgba(0,103,244,1) 0%, rgba(43,219,220,1) 100%);
+            background: -o-linear-gradient(left, rgba(0,103,244,1) 0%, rgba(43,219,220,1) 100%);
+            background: linear-gradient(to right, rgba(0,103,244,1) 0%, rgba(43,219,220,1) 100%);
+            border: 0;
+
+            &:first-child {
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-right: 0;
+            }
+
+            &:last-child {
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-left: 0;
+            }
+
+            &:hover {
+                background: -webkit-linear-gradient(right, rgba(0,103,244,1) 0%, rgba(43,219,220,1) 100%);
+                background: -o-linear-gradient(right, rgba(0,103,244,1) 0%, rgba(43,219,220,1) 100%);
+                background: linear-gradient(to left, rgba(0,103,244,1) 0%, rgba(43,219,220,1) 100%);
+            }
+        }
+    }
+    
+    & .group-four {
+        margin-left: 0;
+        
+        & .main-btn {
+            background: none;
+            border: 2px solid $primary-one;
+            @include transition(0.3s);
+            padding: 0 12px;
+            
+            & i{
+                font-size: 24px;
+            }
+
+            &:first-child {
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-right: 0;
+            }
+
+            &:last-child {
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-left: 0;
+            }
+
+            &:hover {
+                background-color: $primary-one;
+                color: $white;
+            }
+        }
+    }
+
+    & .group-five {
+        & .main-btn {
+            background: none;
+            @include transition(0.3s);
+            overflow: hidden;
+            color: $white;
+            line-height: 52px;
+            background: -webkit-linear-gradient(rgba(0,103,244,1) 0%, rgba(43,219,220,1) 100%);
+            background: -o-linear-gradient(rgba(0,103,244,1) 0%, rgba(43,219,220,1) 100%);
+            background: linear-gradient(rgba(0,103,244,1) 0%, rgba(43,219,220,1) 100%);
+            border-top: 0;
+            border-bottom: 0;
+            border-color: rgba(244, 246, 247, 0.2);
+            padding: 0 16px;
+
+            &:first-child {
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-right: 0;
+            }
+
+            &:last-child {
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-left: 0;
+            }
+
+            &:hover {
+                background: -webkit-linear-gradient(bottom, rgba(0,103,244,1) 0%, rgba(43,219,220,1) 100%);
+                background: -o-linear-gradient(bottom, rgba(0,103,244,1) 0%, rgba(43,219,220,1) 100%);
+                background: linear-gradient(to top, rgba(0,103,244,1) 0%, rgba(43,219,220,1) 100%);
+            }
+        }
+    }
+
+    & .group-six {
+        & .main-btn {
+            background: none;
+            @include transition(0.3s);
+            overflow: hidden;
+            color: $white;
+            line-height: 52px;
+            background: -webkit-linear-gradient(left, rgba(0,103,244,1) 0%, rgba(43,219,220,1) 100%);
+            background: -o-linear-gradient(left, rgba(0,103,244,1) 0%, rgba(43,219,220,1) 100%);
+            background: linear-gradient(to right, rgba(0,103,244,1) 0%, rgba(43,219,220,1) 100%);
+            border: 0;
+            padding: 0 16px;
+
+            &:first-child {
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-right: 0;
+            }
+
+            &:last-child {
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-left: 0;
+            }
+
+            &:hover {
+                background: -webkit-linear-gradient(right, rgba(0,103,244,1) 0%, rgba(43,219,220,1) 100%);
+                background: -o-linear-gradient(right, rgba(0,103,244,1) 0%, rgba(43,219,220,1) 100%);
+                background: linear-gradient(to left, rgba(0,103,244,1) 0%, rgba(43,219,220,1) 100%);
+            }
+        }
+    }    
+}

@@ -1,0 +1,101 @@
+
+
+
+/*===========================
+     06.GALLERY css 
+===========================*/
+
+
+.gallery_area{}
+
+.gallery_wrapper{
+    margin-top: 30px;
+}
+
+.single_gallery{
+    position: relative;
+    
+    & .gallery_image{
+        & img{
+            width: 100%;
+        }
+    }
+    & .gallery_content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        
+        &::before{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 0;
+            top: 0;
+            left: 0;
+            background-color: rgba($black, 0.85);
+            @include transition(0.3s);
+        }
+        
+        & .gallery_icon{
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            @include transform(translateY(-50%));
+            
+            & li{
+                display: inline-block;
+                margin: 0 5px;
+                @include transition(0.3s);
+                opacity: 0;
+                visibility: hidden;
+                
+                &:first-child{
+                    @include transform(translateX(-100%));
+                }
+                &:last-child{
+                    @include transform(translateX(100%));
+                }
+                
+                & a{
+                    width: 40px;
+                    height: 40px;
+                    line-height: 36px;
+                    text-align: center;
+                    font-size: 16px;
+                    color: $theme-color;
+                    border: 2px solid $theme-color;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    
+    &:hover{
+        & .gallery_content{
+            &::before{
+                height: 100%;
+            }
+            & .gallery_icon{
+                & li{
+                    @include transform(translateX(0));
+                    @include transition-delay(0.3s);
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

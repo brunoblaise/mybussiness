@@ -1,0 +1,34 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: 
+    Template URI: site.com
+    Description: 
+    Author: Uideck
+    Author URI: https://uideck.com/
+    Support: https://uideck.com/support/
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+    CSS INDEX
+    ===================
+
+    01. Theme default CSS
+	02. Header
+    03. Hero
+	04. Footer
+
+-----------------------------------------------------------------------------------*/
+
+@import 'variables';
+@import 'mixin';
+@import 'common';
+@import 'header';
+@import 'couple';
+@import 'coming-soon';
+@import 'love';
+@import 'gallery';
+@import 'event';
+@import 'testimonial';
+@import 'contact';
+@import 'footer';

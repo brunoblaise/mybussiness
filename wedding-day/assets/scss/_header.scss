@@ -1,0 +1,495 @@
+
+
+
+/*===========================
+     02.HEADER css 
+===========================*/
+
+
+/*===== NAVBAR =====*/
+
+
+.header_navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    @include transition(0.3s);
+    background-color: rgba($white, 0.07);
+}
+
+
+.sticky {
+    position: fixed;
+    z-index: 99;
+    background-color: $white;
+    @include box-shadow (0px 20px 50px 0px rgba(0, 0, 0, 0.05));
+    @include transition(0.3s);
+
+    & .navbar {
+        padding: 10px 0;
+    }
+}
+
+
+.navbar {
+    padding: 15px 0;
+    border-radius: 5px;
+    position: relative;
+    @include transition(0.3s);
+}
+
+.navbar-brand {
+    padding: 0;
+    
+    & img{
+        width: 85px;
+    }
+}
+
+
+.navbar-toggler {
+    padding: 0;
+
+    & .toggler-icon {
+        width: 30px;
+        height: 2px;
+        background-color: $white;
+        display: block;
+        margin: 5px 0;
+        position: relative;
+        @include transition(0.3s);
+    }
+
+    &.active {
+        & .toggler-icon {
+            &:nth-of-type(1) {
+                @include transform(rotate(45deg));
+                top: 7px;
+            }
+
+            &:nth-of-type(2) {
+                opacity: 0;
+            }
+
+            &:nth-of-type(3) {
+                @include transform(rotate(135deg));
+                top: -7px;
+            }
+        }
+    }
+}
+
+
+.navbar-collapse {
+    @media #{$md} {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: $white;
+        z-index: 9;
+        @include box-shadow (0px 15px 20px 0px rgba(0, 0, 0, 0.1));
+        padding: 5px 12px;
+    }
+
+    @media #{$xs} {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: $white;
+        z-index: 9;
+        @include box-shadow (0px 15px 20px 0px rgba(0, 0, 0, 0.1));
+        padding: 5px 12px;
+    }
+}
+
+
+.navbar-nav {
+    & .nav-item {
+        margin-left: 45px;
+        position: relative;
+
+        @media #{$lg} {
+            margin-left: 40px;
+        }
+
+        @media #{$md} {
+            margin: 0;
+        }
+
+        @media #{$xs} {
+            margin: 0;
+        }
+
+        & a {
+            font-size: 16px;
+            font-weight: 400;
+            color: $white;
+            @include transition(0.3s);
+            padding: 10px 0;
+            position: relative;
+            font-family: $font-2;
+            position: relative;
+
+            @media #{$md} {
+                display: block;
+                padding: 4px 0;
+                color: $black;
+            }
+
+            @media #{$xs} {
+                display: block;
+                padding: 4px 0;
+                color: $black;
+            }
+        }
+
+        &.active,
+        &:hover {
+            & >a {
+                & span{
+                    opacity: 1;
+                    visibility: visible;
+                    width: 60%;
+                    
+                    &::before{
+                        width: 20%;
+                    }
+                    
+                    &::after{
+                        width: 15%; 
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            & .sub-menu {
+                top: 100%;
+                opacity: 1;
+                visibility: visible;
+
+                @media #{$md} {
+                    top: 0;
+                }
+
+                @media #{$xs} {
+                    top: 0;
+                }
+            }
+        }
+
+        & .sub-menu {
+            width: 200px;
+            background-color: $white;
+            @include box-shadow (0px 0px 20px 0px rgba(0, 0, 0, 0.1));
+            position: absolute;
+            top: 110%;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            @include transition(0.3s);
+
+            @media #{$md} {
+                position: relative;
+                width: 100%;
+                top: 0;
+                display: none;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            @media #{$xs} {
+                position: relative;
+                width: 100%;
+                top: 0;
+                display: none;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            & li {
+                display: block;
+
+                & a {
+                    display: block;
+                    padding: 8px 20px;
+                    color: $black;
+
+                    &.active,
+                    &:hover {
+                        padding-left: 25px;
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+
+    & .sub-nav-toggler {
+        display: none;
+
+        @media #{$md} {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: none;
+            color: $black;
+            font-size: 18px;
+            border: 0;
+            width: 30px;
+            height: 30px;
+        }
+
+        @media #{$xs} {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: none;
+            color: $black;
+            font-size: 18px;
+            border: 0;
+            width: 30px;
+            height: 30px;
+        }
+
+        & span {
+            width: 8px;
+            height: 8px;
+            border-left: 1px solid $black;
+            border-bottom: 1px solid $black;
+            @include transform(rotate(-45deg));
+            position: relative;
+            top: -5px;
+        }
+    }
+}
+
+
+.sticky{
+    & .navbar-toggler {
+        & .toggler-icon {
+            background-color: $black;
+        }
+    }
+    
+        
+    & .navbar-nav {
+        & .nav-item {
+            & a {
+                color: $black;
+            }
+            
+            &.active,
+            &:hover {
+                &>a {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+
+/*===== SLIDER =====*/
+
+
+.header_slider{
+    
+}
+
+.single_slider{
+    height: 800px;
+    position: relative;
+    
+    @media #{$desktop}{
+        height: 900px;
+    }
+    @media #{$xs}{
+        height: 600px;
+    }
+
+    &::before{
+        position: absolute;
+        content: '';
+        background-color: rgba($black-soft, 0.54);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+}
+
+.slider_content{
+    padding-top: 80px;
+    
+    & .slider_sub_title{
+        font-size: 30px;
+        font-family: $font-2;
+        font-weight: 600;
+        color: $white;
+        
+        @media #{$md}{
+            font-size: 24px;
+        }
+        @media #{$xs}{
+            font-size: 18px;
+        }
+    }
+    & .slider_title{
+        font-size: 112px;
+        color: $white;
+        margin-top: 15px;
+        
+        @media #{$lg}{
+            font-size: 102px;
+        }
+        @media #{$md}{
+            font-size: 82px;
+        }
+        @media #{$xs}{
+            font-size: 42px;
+        }
+        @media #{$sm}{
+            font-size: 60px;
+        }
+        
+        & span{
+            display: contents;
+            color: $theme-color;
+        }
+    }
+    & .location{
+        font-size: 30px;
+        font-weight: 600;
+        color: $white;
+        margin-top: 35px;
+        
+        @media #{$md}{
+            font-size: 24px;
+        }
+        @media #{$xs}{
+            font-size: 18px;
+        }
+    }
+    & p{
+        font-size: 25px;
+        color: $white;
+        margin-top: 30px;
+        
+        @media #{$md}{
+            font-size: 20px;
+        }
+        @media #{$xs}{
+            font-size: 16px;
+        }
+        
+        & img{
+            display: inline-block;
+            
+            @media #{$xs}{
+                width: 40px;
+            }
+        }
+    }
+}
+
+.slider-active{
+    & .slick-dots{
+        position: absolute;
+        left: 50%;
+        bottom: 50px;
+        @include transform(translateX(-50%));
+        
+        & li{
+            display: inline-block;
+            margin: 0 3px;
+            
+            & button{
+                width: 15px;
+                height: 15px;
+                background: none;
+                border: 2px solid $white;
+                border-radius: 50%;
+                font-size: 0;
+                @include transition(0.3s);
+                @include transform(translateX(-50%));
+            }
+            
+            &.slick-active{
+                & button{
+                    background-color: $white;
+                    border-color: $border-color;
+                }
+            }
+        }
+    }
+    
+    & .slick-arrow{
+        position: absolute;
+        top: 50%;
+        @include transform(translateY(-50%));
+        left: 0;
+        z-index: 9;
+        @include transition(0.3s);
+        opacity: 0;
+        
+        & i{
+            width: 50px;
+            height: 50px;
+            line-height: 46px;
+            text-align: center;
+            border: 2px solid rgba($white, 0.58);
+            font-size: 26px;
+            color: rgba($white, 0.58);
+            border-radius: 50%;
+            cursor: pointer;
+            @include transition(0.3s);
+        }
+        
+        &:hover{
+            & i{
+                color: $theme-color;
+                border-color: $theme-color;
+            }
+        }
+        
+        &.next{
+            right: 0;
+            left: auto;
+        }
+    }
+    
+    &:hover{
+        & .slick-arrow{
+            left: 30px;
+            opacity: 1;
+            
+            @media #{$desktop}{
+                left: 130px;
+            }
+            
+            &.next{
+                left: auto;
+                right: 30px;
+                
+                @media #{$desktop}{
+                    right: 130px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

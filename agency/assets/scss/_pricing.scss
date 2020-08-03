@@ -1,0 +1,140 @@
+
+
+
+/*===========================
+      8.PRICING css 
+===========================*/
+
+
+.pricing-area{}
+
+
+.pricing {
+    @include box-shadow (0 3px 6px 0 rgba(0, 0, 0, 0.16));
+    padding: 24px 20px 50px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    background-color: $white;
+
+    & .pricing-header {
+        & .sub-title {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 25px;
+            color: $text-color-one;
+            position: relative;
+            padding-bottom: 8px;
+
+            &::before {
+                position: absolute;
+                content: '';
+                width: 72px;
+                height: 4px;
+                bottom: 0;
+                left: 0;
+                background-color: $primary-one;
+                margin: 0 auto;
+            }
+        }
+
+        & .price {
+            display: block;
+            font-size: 64px;
+            font-weight: 600;
+            line-height: 80px;
+            margin-top: 32px;
+            color: $text-color-one;
+
+            @media #{$lg} {
+                font-size: 50px;
+                margin-top: 16px;
+            }
+
+            @media #{$xs} {
+                font-size: 50px;
+                margin-top: 16px;
+            }
+
+            @media #{$sm} {
+                font-size: 64px;
+                margin-top: 32px;
+            }
+        }
+
+        & .year {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 25px;
+            color: $text-color-three;
+            margin-top: 3px;
+        }
+    }
+    
+    & .pricing-baloon {
+        position: absolute;
+        top: 0;
+        right: -78px;
+        width: 156px;
+    }
+
+    & .pricing-list {
+        margin-top: 40px;
+
+        & ul {
+            & li {
+                font-size: 16px;
+                line-height: 24px;
+                color: $text-color-one;
+                margin-top: 16px;
+
+                @media #{$lg} {
+                    font-size: 14px;
+                    margin-top: 12px;
+                }
+
+                @media #{$xs} {
+                    font-size: 14px;
+                    margin-top: 12px;
+                }
+
+                @media #{$sm} {
+                    font-size: 16px;
+                    margin-top: 16px;
+                }
+
+                & i {
+                    color: $primary-one;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+
+    & .pricing-btn {
+        margin-top: 42px;
+
+        & .main-btn {
+            background-color: $primary-one;
+            color: $white;
+            border-color: $primary-one;
+
+            &:hover {
+                background-color: $primary-three;
+                border-color: $primary-three;
+            }
+        }
+    }
+
+    & .bottom-shape {
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        width: 101%;
+    }
+}
+
+
+
+
+

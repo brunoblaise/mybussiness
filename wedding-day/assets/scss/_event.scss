@@ -1,0 +1,86 @@
+
+
+
+/*===========================
+     07.EVENT css 
+===========================*/
+
+.event_area{}
+
+.single_event{
+    
+    & .event_image{
+        overflow: hidden;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        
+        & img{
+            width: 100%;
+            @include transition(0.3s);
+        }
+    }
+    & .event_content{
+        padding: 25px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: $white;
+        @include box-shadow (0px 3px 6px 0px rgba($shadow, 0.35));
+        @include transition(0.3s);
+        
+        & .date{
+            font-size: 16px;
+            color: $body-color;
+        }
+        & .event_title{
+            & a{
+                font-size: 30px;
+                color: $black;
+                margin-top: 20px;
+                @include transition(0.3s);
+                
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+        & p{
+            margin-top: 15px;
+        }
+        & .more{
+            color: $body-color;
+            margin-top: 15px;
+            @include transition(0.3s);
+                
+            &:hover{
+                color: $theme-color;
+            }
+        }
+    }
+    
+    &:hover{
+        & .event_image{
+            & img{
+                @include transform(scale(1.1));
+            }
+        }
+        
+        & .event_content{
+            @include box-shadow (0px 3px 16px 0px rgba($shadow, 0.35));
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,138 @@
+
+
+
+/*===========================
+    09.APP DOWNLOAD css 
+===========================*/
+
+.app-download-area{
+    position: relative;
+    z-index: 5;
+}
+
+.app-shape-1,
+.app-shape-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+    & img{
+        @media #{$md}{
+            width: 300px;
+        }
+        @media #{$xs}{
+            width: 200px;
+        }
+    }
+}
+.app-shape-2{
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.app-download-content{
+    padding: 0 25px;
+    
+    @media #{$xs}{
+        padding: 0;
+    }
+    
+    & .app-title{
+        font-size: 100px;
+        font-weight: 700;
+        color: #000;
+        
+        @media #{$md}{
+            font-size: 70px;
+        }
+        @media #{$xs}{
+            font-size: 32px;
+        }
+        @media #{$sm}{
+            font-size: 55px;
+        }
+    }
+    
+    & ul{
+        padding-top: 100px;
+        
+        @media #{$xs}{
+            padding-top: 60px;
+        }
+        
+        & li{
+            display: inline-block;
+            margin: 0 12px;
+            
+            @media #{$xs}{
+                margin: 0 8px;
+            }
+            
+            & a{
+                width: 235px;
+                height: 95px;
+                line-height: 95px;
+                text-align: center;
+                @include transition(0.3s);
+                border-radius: 5px;
+                
+                @media #{$xs}{
+                    width: 120px;
+                    height: 55px;
+                    line-height: 55px;
+                }
+                @media #{$sm}{
+                    width: 200px;
+                    height: 80px;
+                    line-height: 80px;
+                }
+                
+                & img{
+                    @media #{$xs}{
+                        width: 90px;
+                    }
+                    @media #{$sm}{
+                        width: auto;
+                    }
+                }
+                
+                &.app-store{
+                    background: -webkit-linear-gradient(left, rgba(62,44,234,1) 0%, rgba(75,179,249,1) 50%, rgba(62,44,234,1) 100%);
+                    background: -o-linear-gradient(left, rgba(62,44,234,1) 0%, rgba(75,179,249,1) 50%, rgba(62,44,234,1) 100%);
+                    background: linear-gradient(to right, rgba(62,44,234,1) 0%, rgba(75,179,249,1) 50%, rgba(62,44,234,1) 100%);
+                    background-size: 200%;
+                }
+                &.play-store{
+                    background: -webkit-linear-gradient(left, rgba(28,190,153,1) 0%, rgba(5,222,125,1) 50%, rgba(28,190,153,1) 100%);
+                    background: -o-linear-gradient(left, rgba(28,190,153,1) 0%, rgba(5,222,125,1) 50%, rgba(28,190,153,1) 100%);
+                    background: linear-gradient(to right, rgba(28,190,153,1) 0%, rgba(5,222,125,1) 50%, rgba(28,190,153,1) 100%);
+                    background-size: 200%;
+                }
+                
+                &:hover{
+                    background-position: right;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

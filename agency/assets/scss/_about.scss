@@ -1,0 +1,103 @@
+
+
+
+/*===========================
+        6.ABOUT css 
+===========================*/
+
+.about-area{}
+
+
+.about-feature{
+    & .about-feature-image{
+        & img{
+            width: 100%;
+        }
+    }
+    & .about-feature-content{
+        margin-top: 48px;
+        
+        & .feature-title{
+            font-size: 44px;
+            font-weight: 600;
+            line-height: 55px;
+            color: $text-color-one;
+            
+            @media #{$lg}{
+                font-size: 38px;
+                line-height: 45px;
+            }
+            @media #{$xs}{
+                font-size: 30px;
+                line-height: 35px;
+            }
+        }
+        & .text{
+            font-size: 20px;
+            line-height: 25px;
+            color: $text-color-one;
+            margin-top: 8px;
+            
+            @media #{$lg}{
+                font-size: 18px;
+            }
+            @media #{$xs}{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+
+.about-feature-items{
+    & .feature-items-icon{
+        & img{
+            width: 120px;
+            
+            @media #{$xs}{
+                width: 90px;
+            }
+            @media #{$sm}{
+                width: 120px;
+            }
+        }
+    }
+    & .feature-items-content{
+        padding-left: 30px;
+        
+        @media #{$xs}{
+            padding-left: 0;
+            padding-top: 25px;
+        }
+        
+        @media #{$sm}{
+            padding-left: 30px;
+            padding-top: 0;
+        }
+        
+        & .items-title{
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 25px;
+            color: $text-color-one;
+            
+            @media #{$xs}{
+                font-size: 18px;
+            }
+        }
+        & .text{
+            font-size: 16px;
+            line-height: 24px;
+            color: $text-color-one;
+            margin-top: 16px;
+            
+            @media #{$xs}{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,131 @@
+/*===========================
+      12.FOOTER css 
+===========================*/
+
+.footer-area {}
+
+.footer-widget {}
+
+
+.footer-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    color: $text-color-three;
+}
+
+.footer-support {
+    padding-top: 21px;
+
+    & span {
+        font-size: 16px;
+        line-height: 24px;
+        color: $text-color-one;
+        font-weight: 600;
+        margin-top: 9px;
+        display: block;
+
+        @media #{$xs} {
+            display: block;
+        }
+    }
+}
+
+
+.social {
+    padding-top: 27px;
+
+    & li {
+        display: inline-block;
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        & a {
+            font-size: 24px;
+            color: $text-color-three;
+            @include transition(0.3s);
+
+            &:hover {
+                color: $primary-one;
+            }
+        }
+    }
+}
+
+.footer-link {
+    margin-top: 32px;
+
+    & ul {
+        margin-top: 8px;
+
+        & li {
+            & a {
+                font-size: 16px;
+                line-height: 24px;
+                color: $text-color-one;
+                margin-top: 16px;
+                font-weight: 500;
+                @include transition(0.3s);
+
+                &:hover {
+                    color: $primary-one;
+                }
+            }
+        }
+    }
+}
+
+
+.footer-copyright {
+    background-color: $primary-one;
+    
+    & .copyright {
+        padding-bottom: 23px;
+        padding-top: 13px;
+
+        & .text {
+            color: $white;
+            margin-top: 10px;
+        }
+    }
+}
+
+
+/*===== BACK TO TOP =====*/
+
+.back-to-top{
+    font-size: 20px;
+    color: $white;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    background-color: $primary-one;
+    text-align: center;
+    z-index: 99;
+    @include transition(0.3s);
+    display: none;
+    
+    &:hover{
+        color: $white;
+        background-color: $primary-three;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

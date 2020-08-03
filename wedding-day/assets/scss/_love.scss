@@ -1,0 +1,135 @@
+
+
+
+/*===========================
+     05.OUR LOVE css 
+===========================*/
+
+.our_love_area{
+    
+}
+
+.love_wrapper{
+    position: relative;
+    margin-top: 30px;
+    
+    @media #{$xs}{
+        margin-top: 0;
+    }
+    
+    &::before{
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        content: '';
+        background-color: $theme-color;
+        left: 50%;
+        top: 0;
+        @include transform(translateX(-50%));
+        
+        @media #{$xs}{
+            display: none;
+        }
+    }
+}
+
+.single_love{
+    & .love_content{
+        width: 45%;
+        
+        @media #{$xs}{
+            width: 100%;
+            margin-top: 30px;
+        }
+        
+        & .love_title{
+            font-size: 30px;
+            color: $theme-color;
+        }
+        & p{
+            margin-top: 30px;
+            font-weight: 300;
+        }
+    }
+    & .love_date{
+        width: 10%;
+        text-align: center;
+        
+        @media #{$xs}{
+            width: 100%;
+            margin-top: 30px;
+        }
+        
+        p{
+            width: 40px;
+            position: relative;
+            color: $theme-color;
+            border: 1px solid $theme-color;
+            border-radius: 50px;
+            font-size: 14px;
+            padding: 2px;
+            position: relative;
+            line-height: 35px;
+            padding-bottom: 32px;
+            padding-top: 62px;
+            background-color: $white;
+            margin: 0 auto;
+            
+            @media #{$xs}{
+                width: auto;
+                height: 40px;
+                padding-left: 62px;
+                padding-right: 30px;
+                padding-top: 0;
+                padding-bottom: 0;
+            }    
+            
+            & i{
+                width: 40px;
+                height: 40px;
+                line-height: 38px;
+                text-align: center;
+                border: 1px solid $theme-color;
+                border-radius: 50%;
+                color: $theme-color;
+                position: absolute;
+                top: -1px;
+                left: -1px;
+                
+                @media #{$xs}{
+                    
+                }
+            }
+        }
+    }
+    & .love_image{
+        width: 45%;
+        
+        @media #{$xs}{
+            width: 100%;
+            margin-top: 30px;
+        }
+        
+        & img{
+            width: 100%;
+            border-radius: 10px;
+            
+            @media #{$md}{
+                height: 415px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,246 @@
+/*===========================
+    3.FORM ELEMENTS css 
+===========================*/
+
+.form-elements-area {}
+
+.form-elements-title {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 45px;
+    color: $text-color-three;
+
+    @media #{$xs} {
+        font-size: 24px;
+        line-height: 35px
+    }
+}
+
+.form-group{
+    margin-bottom: 0;
+}
+
+.form-input {        
+    .help-block{
+        margin-top: 2px;
+
+        & .list-unstyled{
+            & li{
+                font-size: 12px;
+                line-height: 16px;
+                color: $danger-color-one;
+            }
+        }
+    }
+
+    & label {
+        font-size: 12px;
+        line-height: 18px;
+        color: $text-color-three;
+        margin-bottom: 8px;
+        display: inline-block;
+    }
+
+    & .input-items {
+        position: relative;
+
+        & input,
+        & textarea{
+            width: 100%;
+            height: 44px;
+            border: 2px solid;
+            padding-left: 44px;
+            padding-right: 12px;
+            position: relative;
+            font-size: 16px;
+        }
+        
+        & textarea{
+            padding-top: 8px;
+            height: 130px;
+            resize: none;
+        }
+
+        & i {
+            position: absolute;
+            top: 11px;
+            left: 13px;
+            font-size: 20px;
+            z-index: 9;
+        }
+
+        &.default {
+            & input,
+            & textarea{
+                border-color: $text-color-two;
+                color: $text-color-three;
+                
+                &:focus{
+                    border-color: $primary-one;
+                }
+
+                @include placeholder {
+                    color: $text-color-three;
+                    opacity: 1;
+                }
+            }
+
+            & i {
+                color: $text-color-three;
+            }
+        }
+
+        &.active {
+            & input,
+            & textarea{
+                border-color: $primary-one;
+                color: $text-color-one;
+
+                @include placeholder {
+                    color: $text-color-one;
+                    opacity: 1;
+                }
+            }
+
+            & i {
+                color: $primary-one;
+            }
+        }
+
+        &.error {
+            & input,
+            & textarea{
+                border-color: $danger-color-one;
+                color: $danger-color-one;
+
+                @include placeholder {
+                    color: $danger-color-one;
+                    opacity: 1;
+                }
+            }
+
+            & i {
+                color: $danger-color-one;
+            }
+        }
+
+        &.success {
+            & input,
+            & textarea{
+                border-color: $success-color-one;
+                color: $success-color-one;
+
+                @include placeholder {
+                    color: $success-color-one;
+                    opacity: 1;
+                }
+            }
+
+            & i {
+                color: $success-color-one;
+            }
+        }
+
+        &.disabled {
+            & input,
+            & textarea{
+                border-color: $text-color-two;
+                color: $text-color-three;
+                background: none;
+
+                @include placeholder {
+                    color: $text-color-three;
+                    opacity: 1;
+                }
+            }
+
+            & i {
+                color: $text-color-three;
+            }
+        }
+    }
+}
+
+.form-style-one {
+    & .form-input {
+        & .input-items {
+            & input,
+            & textarea{}
+        }
+    }
+}
+.form-style-two {
+    & .form-input {
+
+        & .input-items {
+            & input,
+            & textarea{
+                border-radius: 5px;
+                padding-left: 12px;
+                padding-right: 44px;
+            }
+            & i{
+                left: auto;
+                right: 13px;
+            }
+        }
+    }
+}
+.form-style-three {
+    & .form-input {
+        text-align: center;
+
+        & .input-items {
+            & input,
+            & textarea{
+                border-radius: 50px;
+                text-align: center;
+            }
+        }
+    }
+}
+.form-style-four {
+    & .form-input {
+
+        & label{
+            padding-left: 44px;
+            margin-bottom: 0;
+        }
+
+        & .input-items {
+            & input,
+            & textarea{
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+            }
+        }
+    }
+}
+.form-style-five {
+    & .form-input {
+        position: relative;
+
+        & label{
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            background-color: $white;
+            z-index: 5;
+            padding: 0 5px;
+        }
+
+        & .input-items {
+            & input,
+            & textarea{
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+
+
+
+
+

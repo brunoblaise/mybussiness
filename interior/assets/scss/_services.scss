@@ -1,0 +1,77 @@
+
+
+
+
+/*===========================
+      4.SERVICES css 
+===========================*/
+
+.services-area{
+    @media #{$xs}{
+        padding-top: 75px;
+        padding-bottom: 80px;
+    }
+}
+
+.single-services{
+    padding: 50px 30px;
+    background-color: $white;
+    @include transition(0.4s);
+    
+    @media #{$lg}{
+        padding: 30px 10px;
+    }
+    @media #{$xs}{
+        padding: 30px 10px;
+    }
+    
+    & .services-icon{
+        & i{
+            font-size: 52px;
+            color: $theme-color;
+            @include transition(0.4s);
+        }
+    }
+    & .services-content{
+        & .services-title{
+            font-size: 22px;
+            font-weight: 600;
+            font-family: 'Barlow', sans-serif;
+            @include transition(0.4s);
+        }
+        & p{}
+    }
+    
+    &:hover{
+        background-color: $theme-color;
+        & .services-icon{
+            & i{
+                color: $white;
+            }
+        }
+        & .services-content{
+            & .services-title,
+            & p{
+                color: $white;
+            }
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
