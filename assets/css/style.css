@@ -725,7 +725,8 @@ p {
 
 @media(max-width:767px) {
     .sticky .navbar {
-        padding: 20px 0
+        padding: 20px 0;
+     
     }
 }
 
