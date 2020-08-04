@@ -1,0 +1,89 @@
+
+
+
+/*===========================
+       04.ABOUT css 
+===========================*/
+
+.about-area{
+    background-color: $gray;
+    overflow: hidden;
+}
+
+
+.about-image{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-left: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+    @media #{$xs}{
+        margin-left: 0;
+        padding-top: 65px;
+        padding-bottom: 45px;
+    }
+    
+    & .about-shape{
+        background: -webkit-linear-gradient(rgba(97,0,157,1) 0%, rgba(203,16,122,1) 100%);
+        background: -o-linear-gradient(rgba(97,0,157,1) 0%, rgba(203,16,122,1) 100%);
+        background: linear-gradient(rgba(97,0,157,1) 0%, rgba(203,16,122,1) 100%);
+        width: 394px;
+        height: 394px;
+        border-radius: 50%;
+        position: relative;
+        
+        @media #{$xs}{
+            width: 294px;
+            height: 294px;
+        }
+        
+        &::before{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            content: '';
+            @include transform(scale(1.1) rotate(25deg));
+            border-radius: 50%;
+            border: 2px solid #61009D;
+            border-top-color: transparent;
+            border-right-color: transparent;
+        }
+    }
+    
+    & .app{
+        position: relative;
+        @include transform(rotate(-25deg) translateY(-15%));
+        max-width: 280px;
+        position: absolute;
+        top: 100px;
+        left: 95px;
+        @include box-shadow (-15px 10px 30px 0px rgba(0,0,0,0.3));
+        border-radius: 50px;
+        
+        @media #{$xs}{
+            max-width: 175px;
+            border-radius: 25px;
+            top: 85px;
+            left: 75px;
+        }
+    }
+}
+
+
+.about-content{
+    & .main-btn{
+        margin-top: 40px;
+    }
+}
+
+
+
+
+
+
+
+

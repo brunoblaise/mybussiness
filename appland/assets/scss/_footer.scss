@@ -1,0 +1,297 @@
+
+
+
+/*===========================
+     10.FOOTER css 
+===========================*/
+
+.footer-area{
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+    
+    & .footer-shape{
+        position: absolute;
+        
+        @media #{$xs}{
+            display: none;
+        }
+        
+        &.shape-1{
+            background: -webkit-linear-gradient(rgba(254,132,100,1) 0%, rgba(254,110,154,1) 100%);
+            background: -o-linear-gradient(rgba(254,132,100,1) 0%, rgba(254,110,154,1) 100%);
+            background: linear-gradient(rgba(254,132,100,1) 0%, rgba(254,110,154,1) 100%);
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            left: 70px;
+            opacity: 0.55;
+            @include animation(animation1 2s linear infinite);
+            
+            @media #{$xs}{
+                left: auto;
+                right: 40px;
+                top: 25%;
+            }
+        }
+        &.shape-2{
+            background: -webkit-linear-gradient(rgba(51,200,193,1) 0%, rgba(17,155,210,1) 100%);
+            background: -o-linear-gradient(rgba(51,200,193,1) 0%, rgba(17,155,210,1) 100%);
+            background: linear-gradient(rgba(51,200,193,1) 0%, rgba(17,155,210,1) 100%);
+            width: 39px;
+            height: 39px;
+            border-radius: 50%;
+            bottom: 40px;
+            left: 15%;
+            opacity: 0.55;
+            @include animation(animation1 2s linear infinite);
+            
+            @media #{$md}{
+                bottom: 85px;
+            }
+            
+            @media #{$xs}{
+                bottom: 110px;
+            }
+        }
+        &.shape-3{
+            background: -webkit-linear-gradient(rgba(54,28,193,1) 0%, rgba(46,130,239,1) 100%);
+            background: -o-linear-gradient(rgba(54,28,193,1) 0%, rgba(46,130,239,1) 100%);
+            background: linear-gradient(rgba(54,28,193,1) 0%, rgba(46,130,239,1) 100%);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            left: 35%;
+            top: 40px;
+            opacity: 0.55;
+            @include animation(animation1 2s linear infinite);
+            
+            @media #{$md}{
+                top: 40%;
+            }
+        }
+        &.shape-4{
+            background-color: #EBA31A;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            left: 50%;
+            bottom: 5px;
+            @include transform(translateX(-50%));
+            opacity: 0.55;
+            @include animation(animation1 2s linear infinite);
+        }
+        &.shape-5{
+            background-color: #E29E19;
+            right: 37%;
+            top: 0;
+            width: 39px;
+            height: 39px;
+            border-radius: 50%;
+            opacity: 0.55;
+            @include animation(animation1 2s linear infinite);
+        }
+        &.shape-6{
+            background-color: #B60D81;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            top: 125px;
+            right: 15%;
+            opacity: 0.55;
+            @include animation(animation1 2s linear infinite);
+        }
+        &.shape-7{
+            background-color: #6C63FF;
+            width: 64px;
+            height: 64px;
+            bottom: 25px;
+            right: 8%;
+            opacity: 0.55;
+            border-radius: 50%;
+            @include animation(animation1 2s linear infinite);
+            
+            @media #{$md}{
+                bottom: 20%;
+            }
+            
+            @media #{$xs}{
+                bottom: 38%;
+            }
+        }
+        &.shape-8{
+            top: 30px;
+            right: -45px;
+        }
+    }
+
+.logo{max-width: 200px;}
+
+}
+
+
+
+.footer-about{
+    max-width: 320px;
+    
+    & .logo{}
+    & .text{
+        margin-top: 30px;
+    }
+    & .social{
+        margin-top: 30px;
+        
+        & li{
+            display: inline-block;
+            margin-right: 25px;
+            
+            & a{
+                font-size: 20px;
+                color: $body-color;
+                @include transition(0.3s);
+                
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+
+
+.footer-title{
+    & .title{
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+.footer-link{
+    & .link{
+        padding-top: 10px;
+        
+        & li{
+            margin-top: 10px;
+            
+            & a{
+                color: $body-color;
+                font-size: 18px;
+                @include transition(0.3s);
+                
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+.footer-link-wrapper{
+    width: 50%;
+}
+
+
+.footer-contact{
+    & .contact-list{
+        & li{
+            margin-top: 20px;
+            
+            & .contact-info{
+                & .info-info{
+                    width: 30px;
+                    
+                    & img{}
+                }
+                & .info-content{
+                    
+                    & .text{
+                        color: $body-color;
+                        font-size: 16px;
+                        
+                        & a{
+                            color: $body-color;
+                            @include transition(0.3s);
+                            
+                            &:hover{
+                                color: $theme-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.footer-copyright{
+    & .copyright{
+        border-top: 2px solid $body-color;
+        padding-top: 10px;
+        padding-bottom: 25px;
+        
+        & .copyright-text{
+            padding-top: 15px;
+            
+            & .text{
+                color: $body-color;
+            }
+        }
+        & .copyright-privacy{
+            padding-top: 15px;
+            
+            & a{
+                font-size: 16px;
+                color: $body-color;
+                @include transition(0.3s);
+
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/*===== BACK TO TOP =====*/
+
+.back-to-top{
+    font-size: 20px;
+    color: $white;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    background: $theme-color;
+    background-size: 200%;
+    text-align: center;
+    z-index: 99;
+    @include transition(0.3s);
+    display: none;
+    
+    &:hover{
+        background-color: rgba($theme-color, 0.5);
+        color: $white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

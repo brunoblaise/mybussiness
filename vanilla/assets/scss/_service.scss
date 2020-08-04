@@ -1,0 +1,32 @@
+/* Services Item */
+.services-item{
+	padding: 15px;
+	border-radius: 4px;
+	text-align: left;
+	transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+	.icon{
+		i{
+		    font-size: 42px;
+		    width: 42px;
+		   	display: block;
+		    height: 42px;
+		    color: $preset;
+		}
+	}
+	.services-content{
+		h3{
+			margin-top: 10px;
+			font-weight: 500;
+			margin-bottom: 10px;
+			font-size: 15px;
+			text-transform: uppercase;			
+			color: #585b60;
+		}
+	}
+}
+
+
+

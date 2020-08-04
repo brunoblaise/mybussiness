@@ -1,0 +1,92 @@
+
+
+
+/*===========================
+     9.TESTIMONIAL css 
+===========================*/
+
+.testimonial-area{
+    position: relative;
+    
+    & .testimonial-bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 68%;
+    }
+    
+    @media #{$xs}{
+        padding-top: 100px;
+    }
+}
+
+
+.testimonial-content{
+    background-color: rgba(254, 120, 101, 0.9);
+}
+
+.single-testimonial{
+    padding: 40px 25px 50px;
+    
+    & i{
+        font-size: 80px;
+        color: $white;
+    }
+    & p{
+        font-size: 29px;
+        color: $white;
+        font-weight: 500;
+        font-style: italic;
+        line-height: 48px;
+        
+        @media #{$xs}{
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+    & .title{
+        font-size: 16px;
+        color: $white;
+    }
+    & span{
+        font-size: 14px;
+        color: $white;
+    }
+}
+
+
+.testimonial-active{}
+
+
+.testimonial-play{
+    & a{
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        border-radius: 50%;
+        background-color: $white;
+        text-align: center;
+        font-size: 45px;
+        color: $theme-color;
+        @include transition(0.4s);
+            
+        &:hover{
+            color: $white;
+            background-color: $theme-color;
+        }
+
+        i{
+            margin-left: 10px;
+            line-height: 90px;
+        }
+    }
+}
+
+
+
+
+
+
+
+

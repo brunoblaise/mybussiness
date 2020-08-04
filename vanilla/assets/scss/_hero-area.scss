@@ -1,0 +1,58 @@
+/* ==========================================================================
+3. Hero Area
+========================================================================== */
+#hero-area{
+	color: #fff;
+	overflow: hidden;
+	position: relative;
+	background: #f8f9fb;
+	.contents{
+		padding: 170px 0px 50px;
+		h5{
+			font-size: 50px;
+		}
+		.head-title{	
+			color: #585b60;
+		    font-size: 34px;
+		    line-height: 48px;
+		    font-weight: 700;
+		    margin-bottom: 30px;
+		}
+	}
+}
+
+.sloder-img{
+	background: #34363a;
+	.slick-slider {
+		margin: 0 -10px;
+
+		.slick-slide {
+			padding: 0 10px;
+		}
+	}
+
+	.slick-arrow {
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		border: 1px solid $white;
+		color: $white;
+		left: 0;
+		right: 0;
+		top: 50%;
+		margin-top: -20px;
+		z-index: 9;
+		@include transition(.3s);
+
+		&.lni-arrow-right {
+			right: 0;
+			left: auto;
+		}
+		&:hover {
+			color: $preset;
+			background: $white;
+		}
+	}
+}

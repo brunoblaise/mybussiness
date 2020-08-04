@@ -1,0 +1,68 @@
+
+
+
+/*===========================
+     07.SCREENSHOTS css 
+===========================*/
+
+.screenshots{}
+
+.swiper-container{
+    position: relative;
+}
+.screenshot-frame{
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    @include transform(translateX(-50%));
+    width: 342px;
+    height: 100%;
+    z-index: 5;
+    
+    & img{
+        border-radius: 10px;
+    }
+}
+
+
+.swiper-slide {
+    width: 310px;
+    height: auto;
+    @include box-shadow (4px 5px 18px 0px rgba(110,112,113,0.32));
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper-slide-active{
+    &.swiper-slide {
+        border-radius: 10px;
+        overflow: hidden;
+        
+    }
+}
+
+
+.swiper-pagination{
+    bottom: 0 !important;
+    padding-top: 42px;
+    position: relative;
+    z-index: 99;
+    
+    & .swiper-pagination-bullet{
+        width: 16px;
+        height: 16px;
+        border: 2px solid $theme-color;
+        background: none;
+        opacity: 1;
+        
+        &.swiper-pagination-bullet-active{
+            background: $theme-color;
+        }
+    }
+}
+
+

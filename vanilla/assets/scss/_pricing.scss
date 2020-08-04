@@ -1,0 +1,80 @@
+/* ==========================================================================
+   Pricing Table Style
+   ========================================================================== */
+   #pricing{
+    text-align: center;
+    .title{
+        padding-top: 25px;
+        padding-bottom: 25px;
+        h3{
+          text-transform: uppercase;
+          color: $preset;
+          font-size: 15px;
+          margin-bottom: 0px;
+        }
+    }
+    .table{
+        margin-top: 30px;
+        padding-bottom: 30px;
+        border-radius: 4px;
+        box-shadow: 0px 2px 18px 0px rgba(198, 198, 198, 0.3);
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+        .icon{
+          padding-top: 30px;
+           i{
+              color: $preset;
+              font-size: 42px;
+           }
+        }
+        .pricing-header{
+            position: relative;
+            padding-bottom: 20px;
+            text-align: center;
+            .price-value{
+                font-size: 24px;
+                color: #585b60;
+                position: relative;
+                text-align: center;
+                font-weight: 700;
+                line-height: 62px;
+                sup{
+                    font-size: 18px;
+                    font-weight: 500;
+                    top: -18px;
+                }
+                span{
+                  font-size: 14px;
+                  font-weight: 500;
+                }
+            }
+        }
+        .description{
+            text-align: center;
+            padding: 0px 50px;
+            margin-bottom: 20px;
+            height: 200px;
+            li{
+              font-size: 14px;
+              font-weight: 400;
+              color: #abacae;
+              padding-bottom: 15px;            
+            }
+        }
+    } 
+    .table:hover{
+      background: rgba($preset, .06);
+      box-shadow: 0px 2px 18px 0px rgba(198, 198, 198, 0.3);
+    }
+    #active-tb{
+      background: rgba($preset, .06);
+      box-shadow: 0px 2px 18px 0px rgba(198, 198, 198, 0.3);
+    }
+    .active{
+      z-index: 99999;
+    }
+  }
+

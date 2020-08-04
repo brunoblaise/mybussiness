@@ -1,0 +1,158 @@
+
+
+
+/*===========================
+      03.SERVICES css 
+===========================*/
+
+
+.single-services{
+    @include box-shadow (0px 0px 10px 0px rgba(154,154,154,0.16));
+    @include transition(0.3s);
+    padding: 45px 25px 35px;
+    
+    @media #{$xs}{
+        padding: 40px 20px 30px;
+    }
+    
+    & .services-icon{
+        width: 79px;
+        height: 79px;
+        border-radius: 50%;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        
+        & i{
+            font-size: 46px;
+            line-height: 79px;
+            color: $white;
+        }
+        
+        &::before{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            @include transform(scale(1.2));
+            border-radius: 50%;
+            z-index: -1;
+        }
+    }
+    & .services-content{
+        margin-top: 35px;
+        
+        & .services-title{
+            & a{
+                font-size: 25px;
+                font-weight: 500;
+                color: $black;
+                @include transition(0.3s);
+                
+                @media #{$xs}{
+                    font-size: 20px;
+                }
+            }
+        }
+        
+        & .text{
+            margin-top: 30px;
+        }
+    }
+    
+    &.services-color-1{
+        & .services-icon{
+            background-color: #E7A019;
+            
+            &::before{
+                background-color: rgba(231, 160, 25, 0.2);
+            }
+        }
+        
+        & .services-content{
+            & .services-title{
+                & a{
+                    &:hover{
+                        color: #E7A019;
+                    }
+                }
+            }
+        }
+    }
+    
+    &.services-color-2{
+        & .services-icon{
+            background-color: #E54F4F;
+            
+            &::before{
+                background-color: rgba(229, 79, 79, 0.2);
+            }
+        }
+        
+        & .services-content{
+            & .services-title{
+                & a{
+                    &:hover{
+                        color: #E54F4F;
+                    }
+                }
+            }
+        }
+    }
+    
+    &.services-color-3{
+        & .services-icon{
+            background-color: #8950E4;
+            
+            &::before{
+                background-color: rgba(137, 80, 228, 0.2);
+            }
+        }
+        
+        & .services-content{
+            & .services-title{
+                & a{
+                    &:hover{
+                        color: #8950E4;
+                    }
+                }
+            }
+        }
+    }
+    
+    &.services-color-4{
+        & .services-icon{
+            background-color: #0898E7;
+            
+            &::before{
+                background-color: rgba(8, 152, 231, 0.2);
+            }
+        }
+        
+        & .services-content{
+            & .services-title{
+                & a{
+                    &:hover{
+                        color: #0898E7;
+                    }
+                }
+            }
+        }
+    }
+    
+    &:hover{
+        @include box-shadow (0px 15px 17px 0px rgba(154,154,154,0.16));
+    }
+}
+
+
+
+
+
+
+
+
+
+

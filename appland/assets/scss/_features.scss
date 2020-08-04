@@ -1,0 +1,142 @@
+
+
+
+/*===========================
+       05.FEATURES css 
+===========================*/
+
+.features-area{
+    overflow: hidden;
+}
+
+.single-features{
+    background-color: $white;
+    border-radius: 8px;
+    @include box-shadow (0px 0px 10px 0px rgba(154,154,154,0.16));
+    padding: 35px;
+    @include transition(0.3s);
+    
+    
+    @media #{$xs}{
+        padding: 25px;
+    }
+    @media #{$sm}{
+        padding: 35px;
+    }
+    
+    & .features-icon{
+        width: 76px;
+        height: 76px;
+        background-color: #0898E7;
+        border-radius: 50%;
+        text-align: center;
+        
+        & i{
+            font-size: 46px;
+            color: $white;
+            line-height: 79px;
+        }
+    }
+    & .features-content{
+        padding-left: 25px;
+        
+        @media #{$xs}{
+            padding-left: 0;
+            padding-top: 20px;
+        }
+        @media #{$sm}{
+            padding-left: 25px;
+            padding-top: 0;
+        }
+        
+        & .features-title{
+            font-size: 25px;
+            font-weight: 500;
+            
+            @media #{$xs}{
+                font-size: 20px;
+            }
+        }
+
+    }
+    
+    &.features-color-1{
+        & .features-icon{
+            background-color: #0898E7;
+        }
+    }
+    
+    &.features-color-2{
+        & .features-icon{
+            background-color: #8950E4;
+        }
+    }
+    
+    &.features-color-3{
+        & .features-icon{
+            background-color: #FDB11B;
+        }
+    }
+    
+    &:hover{
+        @include box-shadow (0px 15px 17px 0px rgba(154,154,154,0.16));
+    }
+}
+
+
+.features-image{
+    position: relative;
+    max-width: 330px;
+    margin-left: auto;
+    padding-right: 40px;
+    margin-top: 80px;
+    margin-bottom: 65px;
+    
+    @media #{$xs}{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 90px;
+    }
+    
+    & .image{
+        @include box-shadow (-15px 10px 30px 0px rgba(0,0,0,0.3));
+        border-radius: 50px;
+    }
+    
+    & .features-shape-1{
+        width: 185px;
+        height: 185px;
+        background-color: #FEB21C;
+        border-radius: 50%;
+        position: absolute;
+        top: -60px;
+        right: -20px;
+        z-index: -1;
+    }
+    
+    & .features-shape-2{
+        position: absolute;
+        left: -210px;
+        bottom: -190px;
+        max-width: 480px;
+        z-index: -1;
+        
+        @media #{$xs}{
+            max-width: 380px;
+            left: -140px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

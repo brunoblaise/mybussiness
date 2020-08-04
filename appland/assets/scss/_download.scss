@@ -1,0 +1,121 @@
+
+
+
+/*===========================
+     10.DOWNLOAD css 
+===========================*/
+
+.download-area{
+    overflow: hidden;
+    
+    & .download-image{
+        padding-top: 65px;
+        padding-left: 60px;
+        padding-bottom: 60px;
+        position: relative;
+        
+        @media #{$xs}{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        & .image{
+            @include box-shadow (0px 3px 25px 0px rgba(8,153,231,0.2));
+            border-radius: 50px;
+            max-width: 295px;
+            margin: 0 auto;
+            
+            @media #{$xs}{
+                max-width: 100%;
+            }
+            @media #{$sm}{
+                max-width: 295px;
+            }
+        }
+        
+        & .download-shape-1{
+            width: 185px;
+            height: 185px;
+            background-color: #FEB21C;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        & .download-shape-2{
+            position: absolute;
+            bottom: -50px;
+            right: 40px;
+            z-index: -1;
+        }
+    }
+}
+
+.download-content{
+    & .download-title{
+        font-size: 34px;
+        font-weight: 600;
+        
+        @media #{$xs}{
+            font-size: 22px;
+        }
+        @media #{$sm}{
+            font-size: 28px;
+        }
+    }
+    & .text{
+        margin-top: 35px;
+    }
+    
+    & ul{
+        padding-top: 35px;
+        & li{
+            display: inline-block;
+            margin-top: 15px;
+            
+            & a{
+                width: 210px;
+                height: 65px;
+                border-radius: 5px;
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                -ms-flex-align: center;
+                align-items: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                @include transition(0.3s);
+                
+                &.app-store{
+                    background-color: $theme-color;
+                    @include box-shadow (0px 4px 10px 0px rgba($theme-color, 0.4));
+                    margin-right: 28px;
+                    
+                    &:hover{
+                        @include box-shadow (0px 4px 25px 0px rgba($theme-color, 0.4));
+                    }
+                }
+                &.play-store{
+                    background-color: $theme-color-2;
+                    @include box-shadow (0px 4px 10px 0px rgba($theme-color-2, 0.4));
+                    
+                    &:hover{
+                        @include box-shadow (0px 4px 25px 0px rgba($theme-color-2, 0.4));
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

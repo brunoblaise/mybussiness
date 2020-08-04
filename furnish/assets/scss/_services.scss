@@ -1,0 +1,61 @@
+
+
+
+/*===========================
+     6.SERVICES css 
+===========================*/
+
+
+.services-area{
+    background-color: $grey;
+    @media #{$xs}{
+        padding-top: 75px;
+        padding-bottom: 80px;
+    }
+}
+
+.services-left{
+    position: relative;
+    
+    & .services{
+        
+        & img{
+            width: 100%;
+        }
+        
+        & .main-btn{
+            
+        }
+    }
+}
+
+
+.single-services{
+    border: 1px solid $hr-border-color;
+    padding: 25px 15px;
+    background: #fff;
+    
+    & .services-icon{
+        & i{
+            font-size: 50px;
+            color: $theme-color;
+        }
+    }
+    
+    & .services-content{
+        
+        & .title{
+            font-size: 20px;
+            color: $theme-color;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

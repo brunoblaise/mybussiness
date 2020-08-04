@@ -1,0 +1,117 @@
+
+
+
+/*===========================
+     7.SHOWCASE css 
+===========================*/
+
+.showcase-area{
+    @media #{$xs}{
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+}
+
+
+.showcase-title{
+    & .title{
+        font-size: 35px;
+        @media #{$xs}{
+            font-size: 30px;
+        }
+    }
+}
+
+
+.single-showcase{
+    margin-right: 50px;
+    margin-bottom: 45px;
+    position: relative;
+    
+    @media #{$xs}{
+        margin: 0;
+    }
+    @media #{$sm}{
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+    
+    &::before{
+        position: absolute;
+        content: '';
+        width: 400px;
+        height: 230px;
+        background-color: $grey-4;
+        bottom: 0;
+        right: -50px;
+        bottom: -40px;
+        z-index: -1;
+    }
+    
+    & .main-btn{
+        position: absolute;
+        line-height: 78px;
+        padding: 0 70px;
+        left: 60px;
+        bottom: -40px;
+        font-size: 20px;
+        font-weight: 600;
+        
+        @media #{$xs}{
+            line-height: 48px;
+            padding: 0 40px;
+            font-size: 16px;
+            bottom: 20px;
+            left: 40px;
+        }
+        
+    }
+}
+
+
+
+.showcase-active{
+    & .slick-arrow{
+        position: absolute;
+        top: 65px;
+        right: 0;
+        z-index: 9;
+        
+        &.prev{
+            right: 70px;
+            
+            &::before{
+                position: absolute;
+                content: '';
+                background-color: $white;
+                width: 1px;
+                height: 30px;
+                top: 50%;
+                right: 0;
+                @include transform(translateY(-50%));
+            }
+        }
+        
+        & i{
+            width: 70px;
+            line-height: 50px;
+            background-color: $theme-color;
+            color: $white;
+            font-size: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

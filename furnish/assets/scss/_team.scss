@@ -1,0 +1,93 @@
+
+
+
+/*===========================
+     8.TEAM css 
+===========================*/
+
+
+.team-area{
+    background-color: $grey;
+    @media #{$xs}{
+        padding-top: 75px;
+        padding-bottom: 80px;
+    }
+}
+
+
+.single-temp{
+    border: 1px solid transparent;
+    padding: 30px;
+    background-color: $white;
+    @include transition(0.4s);
+    
+    & .team-image{
+        & img{
+            border-radius: 50%;
+        }
+    }
+    & .team-content{
+        & .title{
+            & a{
+                font-size: 20px;
+                color: $heading-color;
+                @include transition(0.4s);
+            
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+        & span{
+            font-size: 14px;
+            color: $body-text-color;
+            display: block;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 2px;
+        }
+        & .social{
+            border: 1px solid $theme-color;
+            display: inline-block;
+            line-height: 38px;
+            padding: 0 15px;
+            border-radius: 50px;
+            background-color: $grey-2;
+            
+            & li{
+                display: inline-block;
+                margin: 0 10px;
+                
+                & a{
+                    font-size: 16px;
+                    color: $body-text-color;
+                    @include transition(0.4s);
+            
+                    &:hover{
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+    
+    &:hover{
+        border-color: $theme-color;
+        @include box-shadow(0px 0px 7px 0px rgba(254,119,101,0.55));
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
