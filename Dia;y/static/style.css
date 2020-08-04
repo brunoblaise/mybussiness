@@ -1,0 +1,1058 @@
+*{
+    padding: 0;
+    margin: 0;
+        box-sizing: border-box;
+}
+header{
+    background-color: #f9ef99;
+    overflow-x: hidden;
+}
+li:hover{
+    color: #4b35ef;
+
+
+}
+button{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+ button .fa {
+    position: relative;
+    left: -35px;
+    top: 4px;
+    outline: none;
+}
+main{
+   height: 761px !important;
+   overflow: hidden;
+}
+.web{
+    overflow: hidden;
+}
+nav{
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+
+    
+   
+}
+
+nav a{
+    color: #2B283A;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    padding: 8px;
+    margin: 0 20px;
+   }
+   .left{
+       position: relative;
+       bottom: 720px;
+    left: 420px;
+   }
+   
+   .right{
+      position: relative; 
+      left: 100px;
+      bottom:40px ;
+   }
+   .card{
+    
+       position: relative;
+       left: 920px;
+       bottom: 2040px;
+   }
+   .stroke{
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-text-stroke: 2px #2B283A;
+
+
+   }
+   .fill{
+       color: #fff;
+   }
+   .lern{
+       position: relative;
+       right: -30px;
+       bottom: 1100px;
+       justify-self: flex-end;
+      left: 200px;
+       max-width: 700px;
+   
+   }
+   .lern h1{
+    text-align: right;
+    color: transparent;
+    line-height: 1.1;
+
+    font-weight: 700;
+   }
+   .word{
+    position: relative;
+bottom:1720px;
+width: 551.63px;
+height: 112px;
+left: 280px;
+}
+ .word h4{
+    width: 551.63px;
+    height: 112px;
+    color: #2B283A;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: right;
+    line-height: 28px;
+ }
+ .card h1{
+     position:absolute;
+     bottom: 80px;
+     font-size: 12px;
+     left: 150px;
+ }
+ .middle{
+     position: relative;
+     bottom: 1040px;
+   
+ }
+ .top{
+    position: relative;
+     bottom:90px ;
+     left: 120px;
+ }
+ .stand{
+    position: relative;
+    bottom:420px ;
+    left: 840px;
+ 
+ }
+ li{
+     list-style: none;
+ }
+ h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.1;
+    font-family: Regular Patch,Regular Bold,Nunito Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    color: #19191a;
+    
+}
+.name {
+    font-size: 1.5rem;
+    margin: 0;
+    display: flex;
+ }
+ .name h1{
+    text-align: left;
+    font-size: 1.5rem;
+    margin: 0;
+    display: flex;
+    padding: 1rem;
+    padding-left: 14rem;
+    justify-content: space-evenly;
+ }
+ .n{
+    padding-right: 4rem;
+ }
+ .title h2{
+    position: relative;
+    z-index: 2;
+    color: #2B283A;
+    font-weight: 700;
+    font-size: 62px;
+ }
+ .web h4, .web h5, .web  h6, .web  p, .web  span {
+    width: 551.63px;
+    height: 112px;
+    color: #2B283A;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: right;
+    line-height: 28px
+}
+ section{
+    height: 441px !important;
+     background-color: #F1f7f3;
+   overflow: hidden;
+     
+ }
+ .web{
+     padding: 1rem;
+  
+ }
+ .web h1{
+    padding: 1rem;
+    position: relative;
+    bottom: 600px;
+}
+.left1{
+    position: relative;
+    left: 500px;
+}
+ .web1{
+    position: relative;
+    bottom: 600px;
+    padding: 1rem;
+    padding: 1rem;
+    display: flex;
+}
+ .box{
+    box-shadow: none;
+    border: 2px solid #dddce0;
+    padding: 1rem;
+    border-radius: .75rem;
+    width: 519.63px;
+    height: 369.85px;
+ }
+ .box2{
+    position: relative;
+    box-shadow: none;
+    border: 2px solid #dddce0;
+    padding: 1rem;
+    border-radius: .75rem;
+    width: 219.63px;
+    height: 369.85px;
+    padding-left: 1rem;
+    left: 40px;
+ }
+ .box2 h3{
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #19191a;
+    font-size: 1.6rem;
+    font-family: Regular Patch,Regular Bold,Nunito Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+
+ }
+ .box2 h4{
+     position: relative;
+     top: 30px;
+    margin: 1.6rem 0 .5rem;
+    font-size: 1.12rem;
+    color: #646466;
+  
+}
+.box2 a{
+    position: relative;
+    top: 40px;
+ 
+}
+
+ .box1{
+     position: relative;
+     left: 20px;
+    box-shadow: none;
+    border: 2px solid #dddce0;
+    padding: 1rem;
+    border-radius: .75rem;
+    width: 219.63px;
+    padding-left: 1rem;
+    height: 369.85px;
+ }
+ .mini h3{   
+      margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #19191a;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+.mini h5{
+    font-weight: 700;
+    line-height: 1.1;
+    color: #484848;
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.max{
+    width: 483.63px;
+    height:144.38px;
+    background: #f6f5fa;
+   padding: 1rem;
+}
+.max a{
+    color: #323233;
+    text-decoration: none;
+    text-align: left;
+    font-size: 22px;
+}
+a:hover{
+    color: #4b35ef;
+}
+.course{
+    padding: 1rem;
+}
+.course a{
+    color: #323233;
+    text-decoration: none;
+    text-align: left;
+    font-size: 20px;
+    font-family: Nunito Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+.course svg{
+    border: 1px solid ;
+    border-radius: 50%;
+    background-color: #ffd500;
+    border-color: #ffd500;
+    width: 26.79px;
+    height: 26.79px;
+
+}
+
+.pratice h3{
+    margin: 1.6rem 0 .5rem;
+    font-size: 1.12rem;
+    color: #646466;
+    font-family: Regular Patch,Regular Bold,Nunito Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+.pratice svg{
+    position: relative;
+    top: 40px;
+    left: 40px;
+    width: 120px;
+    padding: 1rem;
+    height: 120px;
+    margin: 0 auto;
+}
+.pratice circle{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+.html{
+    padding-bottom:2rem ;
+}
+aside{
+    background: #c7b9ff;
+    height:398px;
+    overflow: hidden;
+}
+.row{
+    position: relative;
+    width: 848.83px;
+    height:320px;
+    padding: 1rem;
+    left: 180px;
+    top: 40px;
+}
+.fox svg{
+    position: relative;
+    bottom: 60px;
+  
+}
+.row div{
+    position: relative;
+    border: 1px dashed #2b283a;
+    height: 80px;
+    width: 748.83px;
+    left: 30px;
+    top: 20px;
+    background: #DDEAE1;
+}
+.row span{
+   position: relative;
+   left: 400px;
+   text-align: left;
+   font-size: 16px;
+   color: #2B283A;
+}
+ .row div{
+    display: flex;
+    margin: 3px 0px;
+    padding: 0px 20px;
+
+}
+
+.row a{
+    padding: 1rem;
+    text-align: left;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #2B283A;
+    text-decoration: none;
+}
+.row svg{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 1px dotted #2B283A;
+    border-radius: 50%;
+    top: 20px;
+}
+.separate{
+    position: relative;
+   fill: #f8f8f8;
+bottom: 30px;
+overflow-x: hidden;
+}
+.separate svg{
+   background-color: #f8f8f8;
+}
+.log img{
+    position: relative;
+    bottom: 40px;
+}
+.div{
+    position: relative;
+    left: 1100px;
+    bottom: 30px;
+}
+.div p{
+    text-transform: capitalize;
+    font-weight: 400;
+font-size: 20px;
+color: #2B283A;
+}
+.div h1{
+    text-transform: capitalize;
+ 
+color: #2B283A;
+}
+ footer .fa{
+  position: relative;
+  top: 200px;
+    padding-left: 2rem;
+}
+footer{
+    overflow: hidden;
+    background: #f8f8f8;
+}
+.contact h2{
+  font-size: 20px;
+    color: #2B283A;
+}
+.load{
+    height:4px;
+  position: relative;
+    background: linear-gradient(to left, #92fe9b, #88c9ff);
+    animation: loadingGradient 10s infinite;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+ background-color: #88c9ff;
+ overflow: hidden;
+}
+.loading h1{
+    background-color: #88c9ff;
+    position: relative;
+    bottom: 220px;
+    left: 600px;
+    height: 200px;
+    animation: plane 1s infinite alternate;
+}
+@keyframes plane{
+    from{
+  opacity: 0;
+    }
+    to{
+opacity: 1;
+    }
+}
+
+
+#write{
+    color: #4c4c4c;
+    background: #fff;
+    border: 2px solid #9b9b9b;
+    padding: 6px 8px;
+    font-weight: 400;
+    outline: none;
+    border-radius: 14px;
+    transition: all 3s linear;
+}
+
+.load:empty:after{
+    content: "";
+    height:4px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to left, #92fe9b, #88c9ff);
+    background-size: 200% 200%;
+    animation: loadingGradient 10s infinite;
+    }
+    @keyframes loadingGradient {
+        0%{
+            background-position: 0% 50%;
+        }
+        100%{
+            background-position: -200% 0%;
+        }
+    }
+@media (max-width: 480px) { 
+    
+    header{
+        background-color: #f9ef99;
+        overflow-x: hidden;
+    }
+    
+
+    nav a{
+       
+        font-size: 14px;
+        line-height: 22px;
+      
+       }
+       .right{
+          position: relative; 
+          left: 0px;
+          bottom:40px ;
+       }
+       
+    
+       .lern{
+           position: relative;
+           right: 40px;
+           left: -20px;
+       
+        
+       
+       }
+       .card{
+        
+        display: none;
+         }
+       .stroke{
+        position: absolute;
+        top: 0;
+        right: 0;
+        -webkit-text-stroke: 2px #2B283A;
+    
+    
+       }
+       .fill{
+           color: #fff;
+       }
+       .lern h1{
+        text-align: right;
+        color: #fff;
+        line-height: 1.1;
+    
+        font-weight: 700;
+       }
+       .word {
+        position: relative;
+        bottom: 1620px;
+        width: 551.63px;
+        height: 112px;
+        left: -200px;
+    }
+    .word h4 {
+       
+        font-weight: 400;
+        font-size: 16px;
+        text-align: right;
+        line-height: 28px;
+    }
+    
+       .top {
+        position: relative;
+        bottom: 90px;
+        left: 10px;
+    }
+       .left1{
+        position: relative;
+        left: 20px;
+    }
+    .web1{
+        
+        padding-top: 4rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .box{
+        position: relative;
+        box-shadow: none;
+        border: 2px solid #dddce0;
+        padding: 1rem;
+        border-radius: .75rem;
+        width:  269.85px;
+        height: 519.63px;
+        top: -50px;
+     }
+     .box2{
+        position: relative;
+        box-shadow: none;
+        border: 2px solid #dddce0;
+        padding: 1rem;
+        border-radius: .75rem;
+        width:  269.85px;
+        height: 419.63px;
+        padding-left: 1rem;
+        left: 0px;
+       
+     }
+     .box1{
+         position: relative;
+         left: 0px;
+        box-shadow: none;
+        border: 2px solid #dddce0;
+        padding: 1rem;
+        border-radius: .75rem;
+        width:  269.85px;
+        padding-left: 1rem;
+        top: -20px;
+        height: 419.63px;
+     }
+     .max{
+         position: relative;
+        width:  253.63px;
+        height: 144.38px;
+        right: 8px;
+      
+    }
+    .left1{
+        position: relative;
+        left: 20px;
+    }
+    section{
+        height: 510px !important;
+        overflow: hidden;
+      
+      
+         
+     }
+     .row {
+      
+       
+        left: 60px;
+   
+    }
+     .web1{
+        position: relative;
+        right: 6px;
+    }
+    .row{
+          
+        border: none;
+        
+      
+    }
+    .row div{
+        position: relative;
+        border: 1px dashed #2b283a;
+        height: 80px;
+        width:300px;
+    
+     left: -44px;
+        top: -20px;
+        background: #DDEAE1;
+    }
+    .row span{
+       position: relative;
+       left: 20px;
+       text-align: left;
+       font-size: 16px;
+       color: #2B283A;
+    }
+    .div{
+        position: relative;
+        left: 200px;
+        bottom: 80px;
+    }
+    .web h4, .web h5, .web h6, .web p, .web span {
+        position: relative;
+          width: 351.33px; 
+          left: -17px;
+  /* height: 112px;*/
+      font-weight: 400;
+      font-size: 16px;
+      }
+      #write{
+        color: #4c4c4c;
+        background: #fff;
+        border: 2px solid #9b9b9b;
+        padding: 6px 8px;
+        width: 90px;
+        font-weight: 400;
+        outline: none;
+        border-radius: 14px;
+        transition: all 3s linear;
+    }
+    nav a{
+      display: none;
+       }
+}
+
+@media (min-width: 481px) and (max-width: 767px) { 
+    header{
+        background-color: #f9ef99;
+      
+    }
+    #write{
+        color: #4c4c4c;
+        background: #fff;
+        border: 2px solid #9b9b9b;
+        padding: 6px 8px;
+        width: 100px;
+        font-weight: 400;
+        outline: none;
+        border-radius: 14px;
+        transition: all 3s linear;
+    }
+    nav a{
+        color: #2B283A;
+        font-size: 14px;
+        line-height: 24px;
+        text-decoration: none;
+        padding: 10px;
+        margin: 0 20px;
+       }
+       .left{
+     display: none;
+       }
+     .main{
+         height: 259px !important;
+     }
+       .right{
+          position: relative; 
+          left: -70px;
+          bottom:40px ;
+       }
+       .right svg{
+       width:582px;
+       height: 593px;
+     }
+       .card{
+        
+           position: relative;
+           left: 920px;
+           bottom: 1340px;
+       }
+      
+       .lern{
+           position: relative;
+      left: -10px;
+           bottom: 500px;
+           justify-self: flex-end;
+          
+           max-width: 700px;
+       
+       }
+       .lern h1{
+        text-align: right;
+        color: #fff;
+        line-height: 1.1;
+   
+        font-weight: 700;
+       }
+       .card{
+        
+        display: none;
+         }
+         .word{
+            position: relative;
+        bottom:920px;
+        width: 151.63px;
+        height: 112px;
+        left: -0px;
+        }
+        .word h4{
+            position: relative;
+    width: 451.33px;
+    font-weight: 400;
+    font-size: 20px;
+            
+         
+        }
+        .middle{
+            position: relative;
+            bottom: 40px;
+          
+        }
+        .top{
+           position: relative;
+            bottom:420px ;
+            left: 10px;
+        }
+        .web1{
+            
+            padding-top: 4rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .box{
+            position: relative;
+            box-shadow: none;
+            border: 2px solid #dddce0;
+            padding: 1rem;
+            border-radius: .75rem;
+            width:  369.85px;
+            height: 519.63px;
+            top: -50px;
+         }
+         .box2{
+            position: relative;
+            box-shadow: none;
+            border: 2px solid #dddce0;
+            padding: 1rem;
+            border-radius: .75rem;
+            width:  369.85px;
+            height: 419.63px;
+            padding-left: 1rem;
+            left: 0px;
+           
+         }
+         .box1{
+             position: relative;
+             left: 0px;
+            box-shadow: none;
+            border: 2px solid #dddce0;
+            padding: 1rem;
+            border-radius: .75rem;
+            width:  369.85px;
+            padding-left: 1rem;
+            top: -20px;
+            height: 419.63px;
+         }
+         .max{
+             position: relative;
+            width:  353.63px;
+            height: 144.38px;
+            right: 8px;
+          
+        }
+        .left1{
+            position: relative;
+            left: 20px;
+        }
+        .web h4, .web h5, .web h6, .web p, .web span {
+          position: relative;
+            width: 451.33px; 
+            left: -20px;
+    /* height: 112px;*/
+        font-weight: 400;
+        font-size: 20px;
+        }
+        section{
+            height: 510px !important;
+            overflow: hidden;
+            
+          
+             
+         }
+         .row{
+          
+            border: none;
+            
+          
+        }
+        .row a{
+            font-size: 20px;
+        }
+        .row div{
+            position: relative;
+            border: 1px dashed #2b283a;
+            height: 80px;
+            width:380px;
+            left: -123px;
+            top: 10px;
+            background: #DDEAE1;
+        }
+        .row span{
+           position: relative;
+           left: 20px;
+           text-align: left;
+           font-size: 14px;
+           color: #2B283A;
+        }
+        .div{
+            position: relative;
+            left: 300px;
+            bottom: 80px;
+        }
+        
+} 
+@media (min-width: 768px) and (max-width: 1024px){ 
+    header{
+        background-color: #f9ef99;
+        overflow-x: hidden;
+    }
+    nav a{
+        color: #2B283A;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration: none;
+        padding: 30px;
+        margin: 0 20px;
+       }
+       .left svg{
+        width:582px;
+        height: 593px;
+       
+   
+       }
+     .left{
+    
+        right: 100px;
+     }
+       .right{
+          position: relative; 
+          left: -70px;
+          bottom:40px ;
+       }
+       .right svg{
+       width:582px;
+       height: 593px;
+     }
+       .card{
+        
+      display: none;
+       }
+      
+       .lern{
+           position: relative;
+      left: -60px;
+           bottom: 1140px;
+           justify-self: flex-end;
+          
+           max-width: 700px;
+       
+       }
+       .lern h1{
+        text-align: right;
+        color: #fff;
+        line-height: 1.1;
+   
+        font-weight: 700;
+       }
+       .middle{
+        position: relative;
+        bottom: 1040px;
+      
+    }
+    .top{
+       position: relative;
+        bottom:40px ;
+        left: -10px;
+    }
+    .stand{
+       position: relative;
+       bottom:420px ;
+       left: 530px;
+    
+    } 
+    section{
+        overflow: hidden;
+         background-color: #FFFBDA;
+      
+         
+     }
+     .web1{
+         position: relative;
+         right: -140px;
+     }
+     .word {
+padding-top: 10rem;
+        left: -20px;
+    }
+    .web1{
+            
+        padding-top: 4rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .box{
+        position: relative;
+        box-shadow: none;
+        border: 2px solid #dddce0;
+        padding: 1rem;
+        border-radius: .75rem;
+        width:  369.85px;
+        height: 519.63px;
+        top: -50px;
+     }
+     .box2{
+        position: relative;
+        box-shadow: none;
+        border: 2px solid #dddce0;
+        padding: 1rem;
+        border-radius: .75rem;
+        width:  369.85px;
+        height: 419.63px;
+        padding-left: 1rem;
+        left: 0px;
+       
+     }
+     .box1{
+         position: relative;
+         left: 0px;
+        box-shadow: none;
+        border: 2px solid #dddce0;
+        padding: 1rem;
+        border-radius: .75rem;
+        width:  369.85px;
+        padding-left: 1rem;
+        top: -20px;
+        height: 419.63px;
+     }
+     .max{
+         position: relative;
+        width:  353.63px;
+        height: 144.38px;
+        right: 8px;
+      
+    }
+    .left1{
+        position: relative;
+        left: 20px;
+    }
+    section{
+        height: 410px !important;
+        overflow: hidden;
+         background-color: #f1f7f3;
+      
+         
+     }
+     .row{
+      
+        border: none;
+        
+      
+    }
+
+    .row div{
+        position: relative;
+        border: 1px dashed #2b283a;
+        height: 80px;
+        width:430px;
+        left: -29px;
+        top: 10px;
+        background: #DDEAE1;
+    }
+    .row span{
+       position: relative;
+       left: 90px;
+       text-align: left;
+       font-size: 16px;
+       color: #2B283A;
+    }
+    .loading h1{
+        background-color: #88c9ff;
+        position: relative;
+        bottom: 320px;
+        left: 600px;
+        height: 200px;
+        animation: plane 1s infinite alternate;
+    }
+    .div{
+        position: relative;
+        left: 700px;
+        bottom: 80px;
+    }
+} 

@@ -1,0 +1,371 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.hello{
+display: none;
+}
+pre{
+    position: relative;
+    background-color: #0a0e1d;
+    color: #e85d7f;
+    width:fit-content;
+    height:fit-content;
+    padding: 1rem;
+    
+}
+body {
+    margin: 0;
+    font-family: Nunito Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #484848;
+    text-align: left;
+
+    display: flex;
+    overflow: hidden;
+    background-color: #10162f;
+    flex: 1 1;
+    flex-direction: column;
+}
+.won{
+  display: none;
+}
+.loading {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+   background-color: #88c9ff;
+   overflow: hidden;
+  }
+  #ti{
+      position: relative;
+      top: -2px;
+      left: -1px;
+  }
+  .loading h1{
+      background-color: #88c9ff;
+      position: relative;
+      bottom: 220px;
+      left: 600px;
+      height: 200px;
+      animation: plane 1s infinite alternate;
+  }
+  @keyframes plane{
+      from{
+    opacity: 0;
+      }
+      to{
+  opacity: 1;
+      }
+  }
+
+  
+.de {
+    position: relative;
+    top: 120px;
+}
+.won{
+  
+    position: relative;
+    bottom: 10px;
+    left: 420px;
+}
+.won .para1{
+    position: relative;
+    right: -10px;
+    top: 200px;
+}
+.para1 code{
+    font-size: 16px;
+}
+.continue{
+    display: none;
+}
+#qa{
+    border-color: #3eb38c;
+    background-color: #3eb38c;
+}
+.won .a{
+  position: relative;
+  top: 90px;
+
+}
+.won button{
+    background-color: #141c3a;
+    height: 402px;
+    width: 402px;
+   outline: none;
+    border: 1px solid #2d5dcc;
+}
+:root {
+    --hue-neutral: #10162f;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+    --hue-color:#fff;
+    --text_link_color: rgb(17, 85, 204);
+  }
+code{
+    background-color: initial;
+    margin: 0;
+    padding: 0;
+    color: #4fe0b0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+button, input {
+    overflow: visible;
+}
+[type=submit], button, html [type=button] {
+    -webkit-appearance: button;
+}
+.ques{
+    position: relative;
+    top: 110px;
+    left: 260px;
+  
+}
+
+.continue{
+    position: relative;
+    left: 900px;
+    top: 200px;
+}
+.continue button{
+    color: #fff;
+    background-color: #3069f0;
+    border-color: transparent;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    width:128px;
+    height: 38.4px;
+    transition: all .1s ease-in-out;
+}
+.ro code{
+    position: relative;
+    padding: 1rem;
+    top: 20px;
+}
+.goto{
+    display: none;
+}
+.goto1{
+    display: none;
+}
+.goto2{
+    display: none;
+}
+.goto3{
+    display: none;
+}
+
+.goto .wrong{
+    
+    border-color: #e53935;
+    background-color: #661917;
+    }
+    .goto .correct{
+        border-color: #3eb38c;
+        background-color: #164032;
+    }
+.ques .wrong{
+    
+border-color: #e53935;
+background-color: #661917;
+}
+.ques .correct{
+    border-color: #3eb38c;
+    background-color: #164032;
+}
+.ques button{
+    outline: none;
+    border: 1px solid #2d5dcc;
+    background-color: #141c3a;
+    margin: 1rem 0;
+    border-radius: 2px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 831.5px;
+    cursor: pointer;
+    text-align: left;
+    transition: .25s;
+}
+.para code{
+    position: relative;
+    top: 6px;
+    font-size: 16px;
+    left: 20px;
+}
+.para{
+    position: relative;
+    display: flex;
+    top: 120px;
+    left: 300px;
+}
+
+p{
+    color: #fff;
+    line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+@media (min-width: 481px) and (max-width: 767px) { 
+    .para{
+        position: relative;
+        display: flex;
+        top: 120px;
+        left: 0px;
+    }
+  
+    .para code {
+        position: relative;
+        top: 8px;
+        font-size: 16px;
+        left: 1px;
+    }
+
+    .ques{
+        position: relative;
+        top: 110px;
+        left: 60px;
+    }
+ 
+    .ques button{
+
+        margin: 1rem 0;
+        border-radius: 2px;
+        height: 62px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 400.5px;
+    }
+
+    .continue{
+        position: relative;
+        left: 300px;
+        top: 180px;
+    }
+    .won{
+         
+    position: relative;
+    bottom: 10px;
+    left: 40px;
+    }
+    
+ }
+ @media (max-width: 480px) {
+body{
+    overflow: hidden;
+}
+    .para{
+        position: relative;
+        display: flex;
+        top: 120px;
+        left: 30px;
+    }
+  
+    .para code{
+        position: relative;
+        top: 70px;
+        font-size: 16px;
+        left: -100px;
+    }
+
+    .ques{
+        position: relative;
+        top: 110px;
+        left: 20px;
+    }
+   
+ 
+    .ques button {
+        outline: none;
+        border: 1px solid #2d5dcc;
+        background-color: #141c3a;
+        margin: 1rem 0;
+        border-radius: 2px;
+        height: 62px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 300px;
+        cursor: pointer;
+        text-align: left;
+    }
+
+    .continue{
+        position: relative;
+        left: 200px;
+        top: 180px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px){
+
+    body{
+        overflow: hidden;
+    }
+        .para{
+            position: relative;
+            display: flex;
+            top: 120px;
+            left: 30px;
+        }
+      
+        .para code{
+            position: relative;
+            top: 4px;
+            font-size: 16px;
+            left: 10px;
+        }
+    
+        .ques{
+            position: relative;
+            top: 110px;
+            left: 9px;
+        }
+       
+     
+        .ques button {
+            outline: none;
+            border: 1px solid #2d5dcc;
+            background-color: #141c3a;
+            margin: 1rem 0;
+            border-radius: 2px;
+            height: 62px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 700px;
+            cursor: pointer;
+            text-align: left;
+        }
+    
+        .continue{
+            position: relative;
+            left: 400px;
+            top: 180px;
+        }
+   }

@@ -1,0 +1,456 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.hid1{
+    display: block;
+}
+.columns svg{
+    cursor: pointer;
+}
+body {
+    margin: 0;
+    font-family: Nunito Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #484848;
+    text-align: left;
+    background-color: #fff;
+}
+header{
+    background-color: #f9ef99;
+    height:255px ;
+    overflow: hidden;
+    padding-top: 3.125rem;
+    padding-bottom: 9.375rem;
+    text-align: center;
+    position: relative;
+ 
+}
+.container{
+    padding-top: 3.125rem;
+    padding-bottom: 9.375rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.1;
+    font-family: Regular Patch,Regular Bold,Nunito Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    color: #19191a;
+}
+.lern {
+    position: relative;
+    justify-self: flex-end;
+    left: 120px;
+    top: 10px;
+    max-width: 700px;
+}
+.lern h1 {
+    text-align: right;
+    color: transparent;
+    line-height: 1.1;
+    font-weight: 700;
+    font-size: 60px;
+} 
+.lern1 h1{
+    position: absolute;
+    top: 160px;
+    left: 200px;
+}
+.fill {
+ 
+    color: #fff;
+}
+.stroke {
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-text-stroke: 2px #2B283A;
+}
+.svg_head{
+    position: absolute; 
+    top: 220px;
+    left: 80px;
+}
+.svg_head svg{
+  height: 171px;
+  width: 271px;
+}
+.frist_page a{
+    position: absolute;
+    left: 60px;
+    font-size: 32px;
+    color: #6437cc;
+    margin: 0px 40px 0px  0px;
+    
+}
+#home{
+    position: absolute;
+    left: 240px;
+}
+.position{
+    overflow: hidden; 
+}
+.hidde{
+    display: none;
+    overflow: hidden;
+}
+main {
+ overflow: hidden;
+height:420px;
+}
+.columns {
+    display: flex;
+    position: relative;
+    padding: 16px;
+    margin-top: -1px;
+    list-style-type: none;
+    border-top: 1px solid #e1e4e8;
+    width:1030px;
+    height: 38px;
+    right: 1px;
+  }
+  .columns div {
+  display: flex;
+  position: relative;
+  left: 40px;
+  }
+  .columns svg{
+      left: 20px;
+      display: flex;
+    position: relative;
+ 
+  }
+  .position{
+      position: relative;
+      left: 100px;
+      top: 86px;
+  }
+  .rows {
+      
+    width:1061.33px;
+    border: 1px solid #e1e4e8;
+  }
+.sepa{   
+ 
+
+    z-index: 2;
+         position: absolute; 
+     background: #fff; 
+    width: 100%; 
+     height: 20%; 
+  bottom: -1rem;
+     transform: skewY(2.5deg); 
+    transform-origin: bottom left;
+}
+
+.fox svg{
+    position: relative;
+    bottom: 60px;
+  
+}
+.hidde{
+    border-top: 1px solid #e1e4e8;
+}
+.row{
+    display: flex;
+    padding: 1rem;
+}
+.row svg{
+  position: relative;
+    color: #000;
+right: 4.8px;
+     
+}
+.look{
+    background-color: #ffd500;
+    border-color: #ffd500;
+    color: #000;
+        border-radius: 50%;
+
+}
+
+.row span{
+    padding-left: 2rem;
+}
+.row div{
+    padding-left: 1rem;
+}
+.separate{
+    position: relative;
+   fill: #f8f8f8;
+bottom: 30px;
+overflow-x: hidden;
+}
+.separate svg{
+   background-color: #f8f8f8;
+}
+.log img{
+    position: relative;
+    bottom: 40px;
+}
+.div{
+    position: relative;
+    left: 1100px;
+    bottom: 30px;
+}
+.div p{
+    text-transform: capitalize;
+    font-weight: 400;
+font-size: 20px;
+color: #2B283A;
+}
+.div h1{
+    text-transform: capitalize;
+ 
+color: #2B283A;
+}
+ footer .fa{
+  position: relative;
+  top: 200px;
+    padding-left: 2rem;
+}
+footer{
+    overflow: hidden;
+    background: #f8f8f8;
+}
+.contact h2{
+  font-size: 20px;
+    color: #2B283A;
+}
+.down{
+    position: relative;
+    top: 150px;
+    transform: skewY(2.5deg); 
+    transform-origin: bottom left;
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) { 
+    header{
+        background-color: #f9ef99;
+      
+    }
+    .div{
+        position: relative;
+        left: 300px;
+        bottom: 80px;
+    }
+    .lern1 h1 {
+        position: absolute;
+        top: 120px;
+        left: 200px;
+    }
+    .down {
+      
+        left: 40px;
+      
+    }
+    .svg_head {
+        position: absolute;
+        top: 220px;
+        left: 0px;
+    }
+      
+       .lern{
+           position: relative;
+      left: -0px;
+           bottom: 500px;
+           justify-self: flex-end;
+          
+           max-width: 700px;
+       
+       }
+       .lern h1{
+        text-align: right;
+        color: #fff;
+        line-height: 1.1;
+   
+        font-weight: 700;
+       }
+   
+   
+     
+      
+     
+         .rows {
+            width:  460px;
+           
+        }
+         .columns{
+            width: 430px;
+         }
+.position{
+    position: relative;
+    left: 10px;
+    top: 86px;
+}
+        
+}
+       
+.loading {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+   background-color: #88c9ff;
+   overflow: hidden;
+  }
+  .loading h1{
+      background-color: #88c9ff;
+      position: relative;
+      bottom: 220px;
+      left: 600px;
+      height: 200px;
+      animation: plane 1s infinite alternate;
+  }
+  @keyframes plane{
+      from{
+    opacity: 0;
+      }
+      to{
+  opacity: 1;
+      }
+  }
+
+@media (min-width: 768px) and (max-width: 1024px){ 
+    header{
+        background-color: #f9ef99;
+        overflow-x: hidden;
+    }
+      
+       .lern{
+           position: relative;
+      left: -60px;
+           bottom: 1140px;
+           justify-self: flex-end;
+          
+           max-width: 700px;
+       
+       }
+       .lern h1{
+        text-align: right;
+        color: #fff;
+        line-height: 1.1;
+   
+        font-weight: 700;
+       }
+   
+     
+       .rows {
+        width:  760px;
+       
+    }
+     .columns{
+        width: 730px;
+     }
+.position{
+position: relative;
+left: 10px;
+top: 86px;
+}
+.div{
+    position: relative;
+    left: 800px;
+    bottom: 80px;
+}
+} 
+
+@media (max-width: 480px) { 
+    
+    header{
+        background-color: #f9ef99;
+        overflow-x: hidden;
+    }
+    header{
+        background-color: #f9ef99;
+        overflow: hidden;
+    }
+    
+
+    nav a{
+       
+        font-size: 14px;
+        line-height: 22px;
+      
+       }
+       .right{
+          position: relative; 
+          left: 0px;
+          bottom:40px ;
+       }
+       
+    
+       .lern{
+           position: relative;
+           right: 40px;
+           left: -70px;
+       top: -30px;
+        
+       
+       }
+       .svg_head {
+        position: absolute;
+        top: 280px;
+        left: 80px;
+    }
+       .svg_head svg{
+     width: fit-content;
+     height: fit-content;
+    }
+       .card{
+        
+        display: none;
+         }
+       .stroke{
+        position: absolute;
+        top: 0;
+        right: 0;
+        -webkit-text-stroke: 2px #2B283A;
+    
+    
+       }
+
+       .down {
+        position: relative;
+        top: 100px;
+        transform: skewY(2.5deg);
+        transform-origin: bottom left;
+    }
+    .position {
+        position: relative;
+        left: -10px;
+        top: 86px;
+    }
+
+    .rows{
+        width: 380px;
+    }
+    .columns{
+        width: 350px; 
+    }
+       .fill{
+           color: #fff;
+       }
+       .lern h1{
+        text-align: right;
+        color: #fff;
+        line-height: 1.1;
+    
+        font-weight: 700;
+       }
+     
+  
+       .lern1 h1{
+     left: -20px;
+       }
+    .div{
+        position: relative;
+        left: 200px;
+        bottom: 80px;
+    }
+}
